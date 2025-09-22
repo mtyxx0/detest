@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailing - wizyta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v7.0.0/css/pro.min.css">
+</head>
+<body>
+    <div class="main-page">
+        <div class="back-to-main2 fh"><i class="fat fa-house"></i></div>
+
+        <div class="box"></div>
+        <div class="main-title">Umów wizytę</div>
+
+        <div class="info-box-wrapper">
+            <div class="info-box">
+                <div class="info">Wypełnij wsyzstkie pola!</div>
+                <div class="timer">10s</div>
+            </div>
+        </div>
+
+        <div class="visit-content">
+            <div class="stages">
+                <div class="first-stage current"></div>
+                <div class="second-stage"></div>
+                <div class="third-stage"></div>
+            </div>
+
+            <div class="first-column">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder=" " class="visit-name" required>
+                    <label for="name">Imię</label>
+
+                    <button class="name-info"><i class="fal fa-circle-info"></i></button>
+
+                    <div class="info-container">
+                        <div class="text">Potrzebujemy Twojego imienia, aby móc Cię poprawnie zidentyfikować podczas późniejszego odbioru pojazdu.</div>
+                    </div>
+                </div>
+            
+                <div class="input-group">
+                    <input type="text" id="surname" placeholder=" " class="visit-surname" required>
+                    <label for="surname">Nazwisko</label>
+                </div>
+            
+                <div class="input-group">
+                    <input type="tel" id="phone" placeholder=" " class="visit-phone" required>
+                    <label for="phone">Numer telefonu</label>
+                </div>
+            
+                <div class="input-group">
+                    <input type="email" id="mail" placeholder=" " class="visit-email" required>
+                    <label for="mail">Email</label>
+                </div>
+
+                <button class="next">Dalej</button>
+            </div>
+
+            <div class="second-column">
+                <div class="nd-column-content">
+                    <div class="input-group">
+                        <input type="date" id="date" placeholder=" " class="visit-date" required>
+                        <label for="date">Wybierz preferowaną datę:</label>
+                    </div>
+    
+                    <div class="input-group">
+                        <input type="time" id="time" placeholder=" " class="visit-time" required>
+                        <label for="time">Wybierz preferowaną godzinę:</label>
+                    </div>
+    
+                    <div class="custom-select">
+                        <div class="selected">Wybierz usługę</div>
+
+                        <div class="list"></div>
+                    </div>
+
+                    <button class="add-service">Dodaj</button>
+                    
+                    <div class="added-text">Dodane usługi:</div>
+
+                    <div class="added-services"></div>
+
+                    <div class="custom-select2">
+                        <div class="selected2">Wybierz rodzaj pojazdu</div>
+
+                        <div class="list2"></div>
+                    </div>
+    
+                    <div class="input-group">
+                        <input type="text" id="plate" placeholder=" " class="visit-plate" required>
+                        <label for="plate">Podaj nr. rejestracyjny pojazdu:</label>
+                    </div>
+
+                    <button class="next2">Dalej</button>
+                </div>
+            </div>
+            
+            <div class="third-column">
+                <div class="rd-column-content">
+                    <div class="visit-describing-wrapper">
+                        <textarea class="visit-describing" placeholder="Opisz stan pojazdu – czy i czym pojazd jest zabrudzony, gdzie i z jakiego powodu ma rysy lub inne uszkodzenia itd. (opcjonalne)"></textarea>
+                    </div>
+    
+                    <div class="text">Dodaj osobę, którą upoważniasz do odbioru pojazdu za Ciebie (opcjonalne):</div>
+    
+                    <div class="input-group">
+                        <input type="text" id="n-name" placeholder=" " class="visit-new-name">
+                        <label for="n-name">Imię</label>
+                    </div>
+    
+                    <div class="input-group">
+                        <input type="text" id="n-surname" placeholder=" " class="visit-new-surname">
+                        <label for="n-surname">Nazwisko</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="number" id="n-id" placeholder=" " class="visit-new-id">
+                        <label for="n-id">Ostatnie cztery cyfry dokumentu tożsamości:</label>
+                    </div>
+    
+                    <button class="add-new-person">Dodaj</button>
+    
+                    <div class="new-person-list"></div>
+    
+                    <div class="prefer">
+                        <div class="prefer-text">Preferowana forma kontaktu:</div>
+                        <div class="first-prefer">
+                            <input type="radio" class="prefer-sms" name="contact">
+                            SMS
+                        </div>
+    
+                        <div class="second-prefer">
+                            <input type="radio" class="prefer-email" name="contact">
+                            Email
+                        </div>
+                    </div>
+    
+                    <button class="make-appointment">Umów</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

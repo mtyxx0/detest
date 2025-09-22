@@ -1,0 +1,30 @@
+{
+    "pl": {
+        "handWashing": "Oferujemy szeroki zakres pielęgnacji nadwozia, a jednym z kluczowych etapów jest ręczne mycie detailingowe. To precyzyjny, wieloetapowy proces, w którym każdy detal ma znaczenie. Zamiast szybkich, automatycznych metod stosujemy ręczne techniki i profesjonalne kosmetyki premium, dzięki którym powierzchnia auta pozostaje idealnie czysta i wolna od ryzyka mikrorys. Samochód zostaje dokładnie oczyszczony z brudu drogowego, smoły, osadów metalicznych i wszelkich trudnych zanieczyszczeń. Szczególną uwagę przykładamy do elementów pomijanych przy zwykłym myciu – wnęk drzwiowych, emblematów, listew czy felg. Całość kończy staranne osuszenie oraz pielęgnacja elementów zewnętrznych, aby wydobyć głębię koloru i nadać lakierowi perfekcyjny wygląd. Ręczne mycie detailingowe to podstawa profesjonalnej pielęgnacji samochodu – przygotowuje auto do dalszych prac ochronnych, a jednocześnie nadaje mu nienaganny, elegancki charakter.",
+        "interiorCleaning": "Czyszczenie wnętrza samochodu to dokładny, wieloetapowy proces, w którym każdy detal ma znaczenie. Zamiast powierzchownych metod stosujemy ręczne techniki oraz profesjonalne środki premium, dzięki którym tapicerka, wykładziny i podsufitka pozostają czyste i wolne od ryzyka uszkodzeń. Wszystkie powierzchnie zostają starannie oczyszczone z kurzu, zabrudzeń, plam i trudnych osadów, a szczególną uwagę przykładamy do miejsc pomijanych przy standardowym odkurzaniu – szczelin foteli, nawiewów, paneli drzwiowych czy konsoli środkowej. Całość kończy pielęgnacja elementów wewnętrznych, aby przywrócić głębię koloru, odświeżyć skórę i nadać wnętrzu perfekcyjny wygląd. Ręczne czyszczenie wnętrza to fundament profesjonalnej pielęgnacji auta – przygotowuje samochód do dalszych zabiegów ochronnych i nadaje mu komfortowy, elegancki charakter.",
+        "upholsteryCleaning": "Czyszczenie tapicerki samochodowej obejmuje szeroki zakres usług w których każdy element wnętrza jest traktowany z najwyższą starannością. Zamiast szybkich, powierzchownych metod stosujemy ręczne techniki oraz profesjonalne preparaty premium, które skutecznie usuwają wszelkie plamy, zabrudzenia, osady i nieprzyjemne zapachy, nie niszcząc materiałów. Fotele, kanapy, zagłówki, podłogi i boczki drzwi są dokładnie oczyszczane, a szczególną uwagę przykładamy do miejsc pomijanych przy standardowym sprzątaniu – szczelin, szwów, zakamarków oraz trudno dostępnych przestrzeni przy konsoli i fotelach. Całość kończy staranna pielęgnacja materiałów, przywracająca ich naturalny kolor, miękkość oraz świeży, estetyczny wygląd. Ręczne czyszczenie tapicerki stanowi fundament profesjonalnej pielęgnacji wnętrza samochodu, zapewnia komfort użytkowania, higienę i nadaje pojazdowi elegancki, dopracowany charakter, który w pełni odzwierciedla dbałość o każdy detal.",
+        "interiorOzonation": "",
+        "paintCorrection": "",
+        "ceramicCoatings": "",
+        "waxApplication": "",
+        "chassisInspection": "",
+        "antiCorrosionProtection": "",
+        "paintingAndImpregnation": "",
+        "carWrapping": "",
+        "ppfWrapping": "",
+        "impregnation": "",
+        "polishing": "",
+        "windowTining": "",
+        "wheelArchProtection": "",
+        "thresholdProtection": "",
+        "chassisProtection": "",
+        "oilChange": "",
+        "filterChange": "",
+        "computerDiagnostics": "",
+        "suspensionRepairs": "",
+        "brakeSystemRepairs": "",
+        "steeringSystemRepairs": "",
+        "airConditioningService": "",
+        "carAudioSystemsMontageAndService": ""
+    }
+}

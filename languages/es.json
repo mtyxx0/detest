@@ -1,1 +1,32 @@
-
+{
+    "mainTitle": "El detallado de tu coche nunca ",
+    "mainTitleSpan": "ha sido ",
+    "mainTitleEnd": "tan fácil.",
+    "mainSubtitle": "ofrecemos servicios de detallado de alta calidad",
+    "mainServices": "Servicios",
+    "mainContact": "Contacto",
+    "firstServiceName": "Cuidado Completo del Coche",
+    "secondServiceName": "Cambio de aceite",
+    "thirdServiceName": "Protección del chasis",
+    "fourServiceName": "Pintura del coche",
+    "firstServiceContent": "Ofrecemos limpieza profesional del interior del coche, restaurando frescura y limpieza.",
+    "secondServiceContent": "Cambio profesional de aceite y filtro del motor, diseñado para prolongar la vida del motor y mantener el rendimiento óptimo del vehículo.",
+    "thirdServiceContent": "Protegemos el chasis del vehículo contra el óxido y daños mecánicos con productos avanzados anticorrosión.",
+    "fourthServiceContent": "Ofrecemos pintura profesional de la carrocería y retoques menores, devolviendo a tu vehículo un aspecto pulido e impecable.",
+    "fewServicesInfo": "Estos son solo algunos de los muchos servicios que ofrecemos.",
+    "seeMoreServices": "Ver todos",
+    "aboutTitle": "sobre nosotros",
+    "aboutContent": "¡Hola! Somos NAME, un equipo que crea soluciones que (esperamos) hagan la vida un poco más fácil. Por ahora estamos en beta, descubriendo cosas y definiendo lo que hacemos mejor. Quédate por aquí: estamos creciendo, experimentando y emocionados de ver hacia dónde vamos.",
+    "contactTitle": "contacta con nosotros",
+    "copyright": "Todos los derechos reservados.",
+    "follow": "Empieza a seguir",
+    "allServicesTitle": "servicios",
+    "welcomeText": "Hola",
+    "placeholders": {
+        "name": "Nombre",
+        "email": "Email",
+        "phone": "Número de teléfono",
+        "message": "Tu mensaje",
+        "submit": "Enviar"
+    }
+}

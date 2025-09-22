@@ -1,0 +1,1665 @@
+{
+    "handWashing": {
+        "twoWheeler": {
+            "bike": "<div>15 zł</div>",
+            "motorcycle": "<div>40 zł</div>",
+            "unicycle": "<div>10 zł</div>",
+            "scooter": "<div>30 zł</div>"
+        },
+
+        "atv": {
+            "quad": "<div>50 zł</div>",
+            "utv": "<div>55 zł</div>"
+        },
+
+        "smallCars": {
+            "micro": "<div>70 zł</div>",
+            "compact": "<div>90 zł</div>",
+            "hatchback": "<div>100 zł</div>",
+            "coupe": "<div>110 zł</div>"
+        },
+
+        "biggerCars": {
+            "sedan": "<div>120 zł</div>",
+            "cabriolet": "<div>125 zł</div>",
+            "liftback": "<div>130 zł</div>",
+            "combi": "<div>130 zł</div>",
+            "crossover": "<div>145 zł</div>",
+            "minivan": "<div>140 zł</div>",
+            "roadster": "<div>120 zł</div>",
+            "limousine": "<div>130 zł</div>",
+            "pickup": "<div>130 zł</div>",
+            "targa": "<div>110 zł</div>"
+        },
+
+        "trailer": {
+            "ps": "<div>40 zł</div>",
+            "w": "<div>45 zł</div>",
+            "c": "<div>60 zł</div>",
+            "ch": "<div>90 zł</div>",
+            "l": "<div>50 zł</div>",
+            "p": "<div> 30 zł</div>",
+            "pdpz": "<div>110 zł</div>"
+        },
+
+        "suv": {
+            "bs": "<div>130 zł</div>",
+            "cs": "<div>140 zł</div>",
+            "ds": "<div>150 zł</div>",
+            "es": "<div>160 zł</div>"
+        },
+
+        "deliveryTruck": {
+            "f": "<div>80 zł</div>",
+            "v": "<div>90 zł</div>",
+            "sdk": "<div>170 zł</div>",
+            "sdp": "<div>140 zł</div>"
+        },
+
+        "truck": {
+            "l": "<div>190 zł</div>",
+            "s": "<div>240 zł</div>",
+            "c": "<div>280 zł</div>"
+        }
+    },
+
+    "interiorCleaning": {
+        "twoWheeler": {
+            "bike": "<div>20 zł</div>",
+            "motorcycle": "<div>40 zł</div>",
+            "unicycle": "<div>Nie dotyczy</div>",
+            "scooter": "<div>Nie dotyczy</div>"
+        },
+
+        "atv": {
+            "quad": "<div>40 zł</div>",
+            "utv": "<div>60 zł</div>"
+        },
+
+        "smallCars": {
+            "micro": "<div>70 zł</div>",
+            "compact": "<div>90 zł</div>",
+            "hatchback": "<div>100 zł</div>",
+            "coupe": "<div>100 zł</div>"
+        },
+
+        "biggerCars": {
+            "sedan": "<div>110 zł</div>",
+            "cabriolet": "<div>110 zł</div>",
+            "liftback": "<div>110 zł</div>",
+            "combi": "<div>130 zł</div>",
+            "crossover": "<div>130 zł</div>",
+            "minivan": "<div>130 zł</div>",
+            "roadster": "<div>120 zł</div>",
+            "limousine": "<div>190 zł</div>",
+            "pickup": "<div>150 zł</div>",
+            "targa": "<div>130 zł</div>"
+        },
+
+        "trailer": {
+            "ps": "<div>Nie dotyczy</div>",
+            "w": "<div>Nie dotyczy</div>",
+            "c": "<div>Nie dotyczy</div>",
+            "ch": "<div>Nie dotyczy</div>",
+            "l": "<div>Nie dotyczy</div>",
+            "p": "<div>Nie dotyczy</div>",
+            "pdpz": "<div>Nie dotyczy</div>"
+        },
+
+        "suv": {
+            "bs": "<div>130 zł</div>",
+            "cs": "<div>130 zł</div>",
+            "ds": "<div>140 zł</div>",
+            "es": "<div>145 zł</div>"
+        },
+
+        "deliveryTruck": {
+            "f": "<div>140 zł</div>",
+            "v": "<div>145 zł</div>",
+            "sdk": "<div>150 zł</div>",
+            "sdp": "<div>155 zł</div>"
+        },
+
+        "truck": {
+            "l": "<div>150 zł</div>",
+            "s": "<div>160 zł</div>",
+            "c": "<div>170 zł</div>"
+        }
+    },
+
+    "upholsteryCleaning": {
+        "twoWheeler": {
+            "bike": "<div>Nie dotyczy</div>",
+            "motorcycle": "<div>30 zł</div>",
+            "unicycle": "<div>20 zł</div>",
+            "scooter": "<div>Nie dotyczy</div>"
+        },
+
+        "atv": {
+            "quad": "<div>40 zł</div>",
+            "utv": "<div>60 zł</div>"
+        },
+
+        "smallCars": {
+            "micro": "<div>70 zł</div>",
+            "compact": "<div>70 zł</div>",
+            "hatchback": "<div>80 zł</div>",
+            "coupe": "<div>80 zł</div>"
+        },
+
+        "biggerCars": {
+            "sedan": "<div>80 zł</div>",
+            "cabriolet": "<div>80 zł</div>",
+            "liftback": "<div>85 zł</div>",
+            "combi": "<div>90 zł</div>",
+            "crossover": "<div>80 zł</div>",
+            "minivan": "<div>80 zł</div>",
+            "roadster": "<div>60 zł</div>",
+            "limousine": "<div>120 zł</div>",
+            "pickup": "<div>90 zł</div>",
+            "targa": "<div>80 zł</div>"
+        },
+
+        "trailer": {
+            "ps": "<div>Nie dotyczy</div>",
+            "w": "<div>Nie dotyczy</div>",
+            "c": "<div>Nie dotyczy</div>",
+            "ch": "<div>Nie dotyczy</div>",
+            "l": "<div>Nie dotyczy</div>",
+            "p": "<div>Nie dotyczy</div>",
+            "pdpz": "<div>Nie dotyczy</div>"
+        },
+
+        "suv": {
+            "bs": "<div>80 zł</div>",
+            "cs": "<div>80 zł</div>",
+            "ds": "<div>90 zł</div>",
+            "es": "<div>95 zł</div>"
+        },
+
+        "deliveryTruck": {
+            "f": "<div>90 zł</div>",
+            "v": "<div>90 zł</div>",
+            "sdk": "<div>110 zł</div>",
+            "sdp": "<div>110 zł</div>"
+        },
+
+        "truck": {
+            "l": "<div>100 zł</div>",
+            "s": "<div>100 zł</div>",
+            "c": "<div>110 zł</div>"
+        }
+    },
+
+    "interiorOzonation": {
+        "twoWheeler": {
+            "bike": "<div>Nie dotyczy</div>",
+            "motorcycle": "<div>Nie dotyczy</div>",
+            "unicycle": "<div>Nie dotyczy</div>",
+            "scooter": "<div>Nie dotyczy</div>"
+        },
+
+        "atv": {
+            "quad": "<div>Nie dotyczy</div>",
+            "utv": "<div>Nie dotyczy</div>"
+        },
+
+        "smallCars": {
+            "micro": "<div>80 zł</div>",
+            "compact": "<div>90 zł</div>",
+            "hatchback": "<div>100 zł</div>",
+            "coupe": "<div>100 zł</div>"
+        },
+
+        "biggerCars": {
+            "sedan": "<div>100 zł</div>",
+            "cabriolet": "<div>100 zł</div>",
+            "liftback": "<div>100 zł</div>",
+            "combi": "<div>110 zł</div>",
+            "crossover": "<div>110 zł</div>",
+            "minivan": "<div>100 zł</div>",
+            "roadster": "<div>100 zł</div>",
+            "limousine": "<div>210 zł</div>",
+            "pickup": "<div>100 zł</div>",
+            "targa": "<div>90 zł</div>"
+        },
+
+        "trailer": {
+            "ps": "<div>Nie dotyczy</div>",
+            "w": "<div>Nie dotyczy</div>",
+            "c": "<div>Nie dotyczy</div>",
+            "ch": "<div>Nie dotyczy</div>",
+            "l": "<div>Nie dotyczy</div>",
+            "p": "<div>Nie dotyczy</div>",
+            "pdpz": "<div>Nie dotyczy</div>"
+        },
+
+        "suv": {
+            "bs": "<div>110 zł</div>",
+            "cs": "<div>110 zł</div>",
+            "ds": "<div>120 zł</div>",
+            "es": "<div>120 zł</div>"
+        },
+
+        "deliveryTruck": {
+            "f": "<div>110 zł</div>",
+            "v": "<div>115 zł</div>",
+            "sdk": "<div>120 zł</div>",
+            "sdp": "<div>120 zł</div>"
+        },
+
+        "truck": {
+            "l": "<div>130 zł</div>",
+            "s": "<div>130 zł</div>",
+            "c": "<div>140 zł</div>"
+        }
+    },
+
+    "paintCorrection": {
+        "twoWheeler": {
+            "bike": "<div>40 zł</div>",
+            "motorcycle": "<div>70 zł</div>",
+            "unicycle": "<div>30 zł</div>",
+            "scooter": "<div>50 zł</div>"
+        },
+
+        "atv": {
+            "quad": "<div>80 zł</div>",
+            "utv": "<div>80 zł</div>"
+        },
+
+        "smallCars": {
+            "micro": "<div>110 zł</div>",
+            "compact": "<div>130 zł</div>",
+            "hatchback": "<div>150 zł</div>",
+            "coupe": "<div>140 zł</div>"
+        },
+
+        "biggerCars": {
+            "sedan": "<div>140 zł</div>",
+            "cabriolet": "<div>130 zł</div>",
+            "liftback": "<div>130 zł</div>",
+            "combi": "<div>160 zł</div>",
+            "crossover": "<div>150 zł</div>",
+            "minivan": "<div>140 zł</div>",
+            "roadster": "<div>120 zł</div>",
+            "limousine": "<div>180 zł</div>",
+            "pickup": "<div>140 zł</div>",
+            "targa": "<div>120 zł</div>"
+        },
+
+        "trailer": {
+            "ps": "<div>60 zł</div>",
+            "w": "<div>60 zł</div>",
+            "c": "<div>70 zł</div>",
+            "ch": "<div>70 zł</div>",
+            "l": "<div>70 zł</div>",
+            "p": "<div>70 zł</div>",
+            "pdpz": "<div>90 zł</div>"
+        },
+
+        "suv": {
+            "bs": "<div>130 zł</div>",
+            "cs": "<div>130 zł</div>",
+            "ds": "<div>150 zł</div>",
+            "es": "<div>160 zł</div>"
+        },
+
+        "deliveryTruck": {
+            "f": "<div>180 zł</div>",
+            "v": "<div>200 zł</div>",
+            "sdk": "<div>210 zł</div>",
+            "sdp": "<div>220 zł</div>"
+        },
+
+        "truck": {
+            "l": "<div>200 zł</div>",
+            "s": "<div>220 zł</div>",
+            "c": "<div>250 zł</div>"
+        }
+    },
+
+    "ceramicCoatings": {
+        "twoWheeler": {
+            "bike": "<div>110 zł</div>",
+            "motorcycle": "<div>140 zł</div>",
+            "unicycle": "<div>100 zł</div>",
+            "scooter": "<div>90 zł</div>"
+        },
+
+        "atv": {
+            "quad": "<div>100 zł</div>",
+            "utv": "<div>110 zł</div>"
+        },
+
+        "smallCars": {
+            "micro": "<div>140 zł</div>",
+            "compact": "<div>150 zł</div>",
+            "hatchback": "<div>150 zł</div>",
+            "coupe": "<div>140 zł</div>"
+        },
+
+        "biggerCars": {
+            "sedan": "<div>150 zł</div>",
+            "cabriolet": "<div>130 zł</div>",
+            "liftback": "<div>140 zł</div>",
+            "combi": "<div>160 zł</div>",
+            "crossover": "<div>140 zł</div>",
+            "minivan": "<div>170 zł</div>",
+            "roadster": "<div>150 zł</div>",
+            "limousine": "<div>250 zł</div>",
+            "pickup": "<div>200 zł</div>",
+            "targa": "<div>150 zł</div>"
+        },
+
+        "trailer": {
+            "ps": "<div>110 zł</div>",
+            "w": "<div>120 zł</div>",
+            "c": "<div>120 zł</div>",
+            "ch": "<div>120 zł</div>",
+            "l": "<div>120 zł</div>",
+            "p": "<div>120 zł</div>",
+            "pdpz": "<div>150 zł</div>"
+        },
+
+        "suv": {
+            "bs": "<div>180 zł</div>",
+            "cs": "<div>180 zł</div>",
+            "ds": "<div>190 zł</div>",
+            "es": "<div>200 zł</div>"
+        },
+
+        "deliveryTruck": {
+            "f": "<div>180 zł</div>",
+            "v": "<div>190 zł</div>",
+            "sdk": "<div>200 zł</div>",
+            "sdp": "<div>200 zł</div>"
+        },
+
+        "truck": {
+            "l": "<div>210 zł</div>",
+            "s": "<div>210 zł</div>",
+            "c": "<div>230 zł</div>"
+        }
+    },
+
+    "waxApplication": {
+        "twoWheeler": {
+            "bike": "<div>60 zł</div>",
+            "motorcycle": "<div>80 zł</div>",
+            "unicycle": "<div>50 zł</div>",
+            "scooter": "<div>60 zł</div>"
+        },
+
+        "atv": {
+            "quad": "<div>80 zł</div>",
+            "utv": "<div>80 zł</div>"
+        },
+
+        "smallCars": {
+            "micro": "<div>110 zł</div>",
+            "compact": "<div>130 zł</div>",
+            "hatchback": "<div>150 zł</div>",
+            "coupe": "<div>140 zł</div>"
+        },
+
+        "biggerCars": {
+            "sedan": "<div>120 zł</div>",
+            "cabriolet": "<div>130 zł</div>",
+            "liftback": "<div>150 zł</div>",
+            "combi": "<div>160 zł</div>",
+            "crossover": "<div>150 zł</div>",
+            "minivan": "<div>180 zł</div>",
+            "roadster": "<div>140 zł</div>",
+            "limousine": "<div>240 zł</div>",
+            "pickup": "<div>150 zł</div>",
+            "targa": "<div>140 zł</div>"
+        },
+
+        "trailer": {
+            "ps": "<div>50 zł</div>",
+            "w": "<div>60 zł</div>",
+            "c": "<div>60 zł</div>",
+            "ch": "<div>60 zł</div>",
+            "l": "<div>60 zł</div>",
+            "p": "<div>60 zł</div>",
+            "pdpz": "<div>80 zł</div>"
+        },
+
+        "suv": {
+            "bs": "<div>130</div>",
+            "cs": "<div>140 zł</div>",
+            "ds": "<div>140 zł</div>",
+            "es": "<div>150 zł</div>"
+        },
+
+        "deliveryTruck": {
+            "f": "<div>160 zł</div>",
+            "v": "<div>160 zł</div>",
+            "sdk": "<div>180 zł</div>",
+            "sdp": "<div>200 zł</div>"
+        },
+
+        "truck": {
+            "l": "<div>200 zł</div>",
+            "s": "<div>200 zł</div>",
+            "c": "<div>210 zł</div>"
+        }
+    },
+
+    "chassisInspection": {
+        "twoWheeler": {
+            "bike": "<div>Nie dotyczy</div>",
+            "motorcycle": "<div>Nie dotyczy</div>",
+            "unicycle": "<div>Nie dotyczy</div>",
+            "scooter": "<div>Nie dotyczy</div>"
+        },
+
+        "atv": {
+            "quad": "<div>60 zł</div>",
+            "utv": "<div>60 zł</div>"
+        },
+
+        "smallCars": {
+            "micro": "<div>60 zł</div>",
+            "compact": "<div>60 zł</div>",
+            "hatchback": "<div>60 zł</div>",
+            "coupe": "<div>60 zł</div>"
+        },
+
+        "biggerCars": {
+            "sedan": "<div>80 zł</div>",
+            "cabriolet": "<div>80 zł</div>",
+            "liftback": "<div>80 zł</div>",
+            "combi": "<div>80 zł</div>",
+            "crossover": "<div>80 zł</div>",
+            "minivan": "<div>80 zł</div>",
+            "roadster": "<div>80 zł</div>",
+            "limousine": "<div>120 zł</div>",
+            "pickup": "<div>80 zł</div>",
+            "targa": "<div>80 zł</div>"
+        },
+
+        "trailer": {
+            "ps": "<div>Nie dotyczy</div>",
+            "w": "<div>Nie dotyczy</div>",
+            "c": "<div>Nie dotyczy</div>",
+            "ch": "<div>Nie dotyczy</div>",
+            "l": "<div>Nie dotyczy</div>",
+            "p": "<div>Nie dotyczy</div>",
+            "pdpz": "<div>Nie dotyczy</div>"
+        },
+
+        "suv": {
+            "bs": "<div>80 zł</div>",
+            "cs": "<div>80 zł</div>",
+            "ds": "<div>100 zł</div>",
+            "es": "<div>100 zł</div>"
+        },
+
+        "deliveryTruck": {
+            "f": "<div>110 zł</div>",
+            "v": "<div>110 zł</div>",
+            "sdk": "<div>110 zł</div>",
+            "sdp": "<div>110 zł</div>"
+        },
+
+        "truck": {
+            "l": "<div>140 zł</div>",
+            "s": "<div>140 zł</div>",
+            "c": "<div>140 zł</div>"
+        }
+    },
+
+    "antiCorrosionProtection": {
+        "twoWheeler": {
+            "bike": "<div>100 zł</div>",
+            "motorcycle": "<div>120 zł</div>",
+            "unicycle": "<div>80 zł</div>",
+            "scooter": "<div>90 zł</div>"
+        },
+
+        "atv": {
+            "quad": "<div>150 zł</div>",
+            "utv": "<div>150 zł</div>"
+        },
+
+        "smallCars": {
+            "micro": "<div>200 zł</div>",
+            "compact": "<div>200 zł</div>",
+            "hatchback": "<div>200 zł</div>",
+            "coupe": "<div>200 zł</div>"
+        },
+
+        "biggerCars": {
+            "sedan": "<div>250 zł</div>",
+            "cabriolet": "<div>250 zł</div>",
+            "liftback": "<div>250 zł</div>",
+            "combi": "<div>250 zł</div>",
+            "crossover": "<div>250 zł</div>",
+            "minivan": "<div>250 zł</div>",
+            "roadster": "<div>250 zł</div>",
+            "limousine": "<div>300 zł</div>",
+            "pickup": "<div>250 zł</div>",
+            "targa": "<div>250 zł</div>"
+        },
+
+        "trailer": {
+            "ps": "<div>180 zł</div>",
+            "w": "<div>180 zł</div>",
+            "c": "<div>180 zł</div>",
+            "ch": "<div>180 zł</div>",
+            "l": "<div>180 zł</div>",
+            "p": "<div>180 zł</div>",
+            "pdpz": "<div>180 zł</div>"
+        },
+
+        "suv": {
+            "bs": "<div>250 zł</div>",
+            "cs": "<div>250 zł</div>",
+            "ds": "<div>300 zł</div>",
+            "es": "<div>300 zł</div>"
+        },
+
+        "deliveryTruck": {
+            "f": "<div>350 zł</div>",
+            "v": "<div>350 zł</div>",
+            "sdk": "<div>350 zł</div>",
+            "sdp": "<div>350 zł</div>"
+        },
+
+        "truck": {
+            "l": "<div>400 zł</div>",
+            "s": "<div>400 zł</div>",
+            "c": "<div>400 zł</div>"
+        }
+    },
+
+    "paintingAndImpregnation": {
+        "twoWheeler": {
+            "bike": "<div>120 zł</div>",
+            "motorcycle": "<div>150 zł</div>",
+            "unicycle": "<div>100 zł</div>",
+            "scooter": "<div>110 zł</div>"
+        },
+
+        "atv": {
+            "quad": "<div>200 zł</div>",
+            "utv": "<div>200 zł</div>"
+        },
+
+        "smallCars": {
+            "micro": "<div>250 zł</div>",
+            "compact": "<div>250 zł</div>",
+            "hatchback": "<div>250 zł</div>",
+            "coupe": "<div>250 zł</div>"
+        },
+
+        "biggerCars": {
+            "sedan": "<div>300 zł</div>",
+            "cabriolet": "<div>300 zł</div>",
+            "liftback": "<div>300 zł</div>",
+            "combi": "<div>300 zł</div>",
+            "crossover": "<div>300 zł</div>",
+            "minivan": "<div>300 zł</div>",
+            "roadster": "<div>300 zł</div>",
+            "limousine": "<div>350 zł</div>",
+            "pickup": "<div>300 zł</div>",
+            "targa": "<div>300 zł</div>"
+        },
+
+        "trailer": {
+            "ps": "<div>220 zł</div>",
+            "w": "<div>220 zł</div>",
+            "c": "<div>220 zł</div>",
+            "ch": "<div>220 zł</div>",
+            "l": "<div>220 zł</div>",
+            "p": "<div>220 zł</div>",
+            "pdpz": "<div>220 zł</div>"
+        },
+
+        "suv": {
+            "bs": "<div>300 zł</div>",
+            "cs": "<div>300 zł</div>",
+            "ds": "<div>350 zł</div>",
+            "es": "<div>350 zł</div>"
+        },
+
+        "deliveryTruck": {
+            "f": "<div>400 zł</div>",
+            "v": "<div>400 zł</div>",
+            "sdk": "<div>400 zł</div>",
+            "sdp": "<div>400 zł</div>"
+        },
+
+        "truck": {
+            "l": "<div>450 zł</div>",
+            "s": "<div>450 zł</div>",
+            "c": "<div>450 zł</div>"
+        }
+    },
+
+    "impregnation": {
+        "twoWheeler": {
+            "bike": "<div>80 zł</div>",
+            "motorcycle": "<div>100 zł</div>",
+            "unicycle": "<div>70 zł</div>",
+            "scooter": "<div>80 zł</div>"
+        },
+
+        "atv": {
+            "quad": "<div>120 zł</div>",
+            "utv": "<div>120 zł</div>"
+        },
+
+        "smallCars": {
+            "micro": "<div>150 zł</div>",
+            "compact": "<div>150 zł</div>",
+            "hatchback": "<div>150 zł</div>",
+            "coupe": "<div>150 zł</div>"
+        },
+
+        "biggerCars": {
+            "sedan": "<div>180 zł</div>",
+            "cabriolet": "<div>180 zł</div>",
+            "liftback": "<div>180 zł</div>",
+            "combi": "<div>180 zł</div>",
+            "crossover": "<div>180 zł</div>",
+            "minivan": "<div>180 zł</div>",
+            "roadster": "<div>180 zł</div>",
+            "limousine": "<div>220 zł</div>",
+            "pickup": "<div>180 zł</div>",
+            "targa": "<div>180 zł</div>"
+        },
+
+        "trailer": {
+            "ps": "<div>150 zł</div>",
+            "w": "<div>150 zł</div>",
+            "c": "<div>150 zł</div>",
+            "ch": "<div>150 zł</div>",
+            "l": "<div>150 zł</div>",
+            "p": "<div>150 zł</div>",
+            "pdpz": "<div>150 zł</div>"
+        },
+
+        "suv": {
+            "bs": "<div>180 zł</div>",
+            "cs": "<div>180 zł</div>",
+            "ds": "<div>220 zł</div>",
+            "es": "<div>220 zł</div>"
+        },
+
+        "deliveryTruck": {
+            "f": "<div>280 zł</div>",
+            "v": "<div>280 zł</div>",
+            "sdk": "<div>280 zł</div>",
+            "sdp": "<div>280 zł</div>"
+        },
+
+        "truck": {
+            "l": "<div>350 zł</div>",
+            "s": "<div>350 zł</div>",
+            "c": "<div>350 zł</div>"
+        }
+    },
+
+    "carWrapping": {
+        "twoWheeler": {
+            "bike": "<div>250 zł</div>",
+            "motorcycle": "<div>300 zł</div>",
+            "unicycle": "<div>150 zł</div>",
+            "scooter": "<div>200 zł</div>"
+        },
+
+        "atv": {
+            "quad": "<div>400 zł</div>",
+            "utv": "<div>400 zł</div>"
+        },
+
+        "smallCars": {
+            "micro": "<div>600 zł</div>",
+            "compact": "<div>600 zł</div>",
+            "hatchback": "<div>600 zł</div>",
+            "coupe": "<div>600 zł</div>"
+        },
+
+        "biggerCars": {
+            "sedan": "<div>800 zł</div>",
+            "cabriolet": "<div>800 zł</div>",
+            "liftback": "<div>800 zł</div>",
+            "combi": "<div>800 zł</div>",
+            "crossover": "<div>800 zł</div>",
+            "minivan": "<div>800 zł</div>",
+            "roadster": "<div>800 zł</div>",
+            "limousine": "<div>1200 zł</div>",
+            "pickup": "<div>900 zł</div>",
+            "targa": "<div>800 zł</div>"
+        },
+
+        "trailer": {
+            "ps": "<div>500 zł</div>",
+            "w": "<div>500 zł</div>",
+            "c": "<div>500 zł</div>",
+            "ch": "<div>500 zł</div>",
+            "l": "<div>500 zł</div>",
+            "p": "<div>500 zł</div>",
+            "pdpz": "<div>500 zł</div>"
+        },
+
+        "suv": {
+            "bs": "<div>800 zł</div>",
+            "cs": "<div>800 zł</div>",
+            "ds": "<div>1000 zł</div>",
+            "es": "<div>1000 zł</div>"
+        },
+
+        "deliveryTruck": {
+            "f": "<div>1200 zł</div>",
+            "v": "<div>1200 zł</div>",
+            "sdk": "<div>1200 zł</div>",
+            "sdp": "<div>1200 zł</div>"
+        },
+
+        "truck": {
+            "l": "<div>1500 zł</div>",
+            "s": "<div>1500 zł</div>",
+            "c": "<div>1500 zł</div>"
+        }
+    },
+
+    "ppfWrapping": {
+        "twoWheeler": {
+            "bike": "<div>250 zł</div>",
+            "motorcycle": "<div>300 zł</div>",
+            "unicycle": "<div>150 zł</div>",
+            "scooter": "<div>200 zł</div>"
+        },
+
+        "atv": {
+            "quad": "<div>400 zł</div>",
+            "utv": "<div>400 zł</div>"
+        },
+
+        "smallCars": {
+            "micro": "<div>600 zł</div>",
+            "compact": "<div>600 zł</div>",
+            "hatchback": "<div>600 zł</div>",
+            "coupe": "<div>600 zł</div>"
+        },
+
+        "biggerCars": {
+            "sedan": "<div>800 zł</div>",
+            "cabriolet": "<div>800 zł</div>",
+            "liftback": "<div>800 zł</div>",
+            "combi": "<div>800 zł</div>",
+            "crossover": "<div>800 zł</div>",
+            "minivan": "<div>800 zł</div>",
+            "roadster": "<div>800 zł</div>",
+            "limousine": "<div>1200 zł</div>",
+            "pickup": "<div>900 zł</div>",
+            "targa": "<div>800 zł</div>"
+        },
+
+        "trailer": {
+            "ps": "<div>500 zł</div>",
+            "w": "<div>500 zł</div>",
+            "c": "<div>500 zł</div>",
+            "ch": "<div>500 zł</div>",
+            "l": "<div>500 zł</div>",
+            "p": "<div>500 zł</div>",
+            "pdpz": "<div>500 zł</div>"
+        },
+
+        "suv": {
+            "bs": "<div>800 zł</div>",
+            "cs": "<div>800 zł</div>",
+            "ds": "<div>1000 zł</div>",
+            "es": "<div>1000 zł</div>"
+        },
+
+        "deliveryTruck": {
+            "f": "<div>1200 zł</div>",
+            "v": "<div>1200 zł</div>",
+            "sdk": "<div>1200 zł</div>",
+            "sdp": "<div>1200 zł</div>"
+        },
+
+        "truck": {
+            "l": "<div>1500 zł</div>",
+            "s": "<div>2000 zł</div>",
+            "c": "<div>3000 zł</div>"
+        }
+    },
+
+    "polishing": {
+        "twoWheeler": {
+            "bike": "<div>120 zł</div>",
+            "motorcycle": "<div>150 zł</div>",
+            "unicycle": "<div>80 zł</div>",
+            "scooter": "<div>100 zł</div>"
+        },
+
+        "atv": {
+            "quad": "<div>200 zł</div>",
+            "utv": "<div>200 zł</div>"
+        },
+
+        "smallCars": {
+            "micro": "<div>250 zł</div>",
+            "compact": "<div>250 zł</div>",
+            "hatchback": "<div>250 zł</div>",
+            "coupe": "<div>250 zł</div>"
+        },
+
+        "biggerCars": {
+            "sedan": "<div>300 zł</div>",
+            "cabriolet": "<div>300 zł</div>",
+            "liftback": "<div>300 zł</div>",
+            "combi": "<div>300 zł</div>",
+            "crossover": "<div>300 zł</div>",
+            "minivan": "<div>300 zł</div>",
+            "roadster": "<div>300 zł</div>",
+            "limousine": "<div>350 zł</div>",
+            "pickup": "<div>300 zł</div>",
+            "targa": "<div>300 zł</div>"
+        },
+
+        "trailer": {
+            "ps": "<div>180 zł</div>",
+            "w": "<div>180 zł</div>",
+            "c": "<div>180 zł</div>",
+            "ch": "<div>180 zł</div>",
+            "l": "<div>180 zł</div>",
+            "p": "<div>180 zł</div>",
+            "pdpz": "<div>180 zł</div>"
+        },
+
+        "suv": {
+            "bs": "<div>300 zł</div>",
+            "cs": "<div>300 zł</div>",
+            "ds": "<div>350 zł</div>",
+            "es": "<div>350 zł</div>"
+        },
+
+        "deliveryTruck": {
+            "f": "<div>400 zł</div>",
+            "v": "<div>400 zł</div>",
+            "sdk": "<div>400 zł</div>",
+            "sdp": "<div>400 zł</div>"
+        },
+
+        "truck": {
+            "l": "<div>450 zł</div>",
+            "s": "<div>450 zł</div>",
+            "c": "<div>450 zł</div>"
+        }
+    },
+
+    "windowTining": {
+        "twoWheeler": {
+            "bike": "<div>120 zł</div>",
+            "motorcycle": "<div>150 zł</div>",
+            "unicycle": "<div>80 zł</div>",
+            "scooter": "<div>100 zł</div>"
+        },
+
+        "atv": {
+            "quad": "<div>200 zł</div>",
+            "utv": "<div>200 zł</div>"
+        },
+
+        "smallCars": {
+            "micro": "<div>250 zł</div>",
+            "compact": "<div>250 zł</div>",
+            "hatchback": "<div>250 zł</div>",
+            "coupe": "<div>250 zł</div>"
+        },
+
+        "biggerCars": {
+            "sedan": "<div>300 zł</div>",
+            "cabriolet": "<div>300 zł</div>",
+            "liftback": "<div>300 zł</div>",
+            "combi": "<div>300 zł</div>",
+            "crossover": "<div>300 zł</div>",
+            "minivan": "<div>300 zł</div>",
+            "roadster": "<div>300 zł</div>",
+            "limousine": "<div>350 zł</div>",
+            "pickup": "<div>300 zł</div>",
+            "targa": "<div>300 zł</div>"
+        },
+
+        "trailer": {
+            "ps": "<div>180 zł</div>",
+            "w": "<div>180 zł</div>",
+            "c": "<div>180 zł</div>",
+            "ch": "<div>180 zł</div>",
+            "l": "<div>180 zł</div>",
+            "p": "<div>180 zł</div>",
+            "pdpz": "<div>180 zł</div>"
+        },
+
+        "suv": {
+            "bs": "<div>300 zł</div>",
+            "cs": "<div>300 zł</div>",
+            "ds": "<div>350 zł</div>",
+            "es": "<div>350 zł</div>"
+        },
+
+        "deliveryTruck": {
+            "f": "<div>400 zł</div>",
+            "v": "<div>400 zł</div>",
+            "sdk": "<div>400 zł</div>",
+            "sdp": "<div>400 zł</div>"
+        },
+
+        "truck": {
+            "l": "<div>450 zł</div>",
+            "s": "<div>450 zł</div>",
+            "c": "<div>450 zł</div>"
+        }
+    },
+
+    "wheelArchProtection": {
+        "twoWheeler": {
+            "bike": "<div>Nie dotyczy</div>",
+            "motorcycle": "<div>Nie dotyczy</div>",
+            "unicycle": "<div>Nie dotyczy</div>",
+            "scooter": "<div>Nie dotyczy</div>"
+        },
+
+        "atv": {
+            "quad": "<div>150 zł</div>",
+            "utv": "<div>150 zł</div>"
+        },
+
+        "smallCars": {
+            "micro": "<div>200 zł</div>",
+            "compact": "<div>200 zł</div>",
+            "hatchback": "<div>200 zł</div>",
+            "coupe": "<div>200 zł</div>"
+        },
+
+        "biggerCars": {
+            "sedan": "<div>250 zł</div>",
+            "cabriolet": "<div>250 zł</div>",
+            "liftback": "<div>250 zł</div>",
+            "combi": "<div>250 zł</div>",
+            "crossover": "<div>250 zł</div>",
+            "minivan": "<div>250 zł</div>",
+            "roadster": "<div>250 zł</div>",
+            "limousine": "<div>300 zł</div>",
+            "pickup": "<div>250 zł</div>",
+            "targa": "<div>250 zł</div>"
+        },
+
+        "trailer": {
+            "ps": "<div>180 zł</div>",
+            "w": "<div>180 zł</div>",
+            "c": "<div>180 zł</div>",
+            "ch": "<div>180 zł</div>",
+            "l": "<div>180 zł</div>",
+            "p": "<div>180 zł</div>",
+            "pdpz": "<div>180 zł</div>"
+        },
+
+        "suv": {
+            "bs": "<div>250 zł</div>",
+            "cs": "<div>250 zł</div>",
+            "ds": "<div>300 zł</div>",
+            "es": "<div>300 zł</div>"
+        },
+
+        "deliveryTruck": {
+            "f": "<div>350 zł</div>",
+            "v": "<div>350 zł</div>",
+            "sdk": "<div>350 zł</div>",
+            "sdp": "<div>350 zł</div>"
+        },
+
+        "truck": {
+            "l": "<div>400 zł</div>",
+            "s": "<div>400 zł</div>",
+            "c": "<div>400 zł</div>"
+        }
+    },
+
+    "thresholdProtection": {
+        "twoWheeler": {
+            "bike": "<div>Nie dotyczy</div>",
+            "motorcycle": "<div>Nie dotyczy</div>",
+            "unicycle": "<div>Nie dotyczy</div>",
+            "scooter": "<div>Nie dotyczy</div>"
+        },
+
+        "atv": {
+            "quad": "<div>Nie dotyczy</div>",
+            "utv": "<div>Nie dotyczy</div>"
+        },
+
+        "smallCars": {
+            "micro": "<div>200 zł</div>",
+            "compact": "<div>200 zł</div>",
+            "hatchback": "<div>200 zł</div>",
+            "coupe": "<div>200 zł</div>"
+        },
+
+        "biggerCars": {
+            "sedan": "<div>250 zł</div>",
+            "cabriolet": "<div>250 zł</div>",
+            "liftback": "<div>250 zł</div>",
+            "combi": "<div>250 zł</div>",
+            "crossover": "<div>250 zł</div>",
+            "minivan": "<div>250 zł</div>",
+            "roadster": "<div>250 zł</div>",
+            "limousine": "<div>300 zł</div>",
+            "pickup": "<div>250 zł</div>",
+            "targa": "<div>250 zł</div>"
+        },
+
+        "trailer": {
+            "ps": "<div>Nie dotyczy</div>",
+            "w": "<divNie dotyczył</div>",
+            "c": "<div>Nie dotyczy</div>",
+            "ch": "<div>Nie dotyczy</div>",
+            "l": "<div>Nie dotyczy</div>",
+            "p": "<div>Nie dotyczy</div>",
+            "pdpz": "<div>Nie dotyczy</div>"
+        },
+
+        "suv": {
+            "bs": "<div>250 zł</div>",
+            "cs": "<div>250 zł</div>",
+            "ds": "<div>300 zł</div>",
+            "es": "<div>300 zł</div>"
+        },
+
+        "deliveryTruck": {
+            "f": "<div>350 zł</div>",
+            "v": "<div>350 zł</div>",
+            "sdk": "<div>350 zł</div>",
+            "sdp": "<div>350 zł</div>"
+        },
+
+        "truck": {
+            "l": "<div>400 zł</div>",
+            "s": "<div>400 zł</div>",
+            "c": "<div>400 zł</div>"
+        }
+    },
+
+    "chassisProtection": {
+        "twoWheeler": {
+            "bike": "<div>Nie dotyczy</div>",
+            "motorcycle": "<div>Nie dotyczy</div>",
+            "unicycle": "<div>Nie dotyczy</div>",
+            "scooter": "<div>Nie dotyczy</div>"
+        },
+
+        "atv": {
+            "quad": "<div>200 zł</div>",
+            "utv": "<div>200 zł</div>"
+        },
+
+        "smallCars": {
+            "micro": "<div>250 zł</div>",
+            "compact": "<div>250 zł</div>",
+            "hatchback": "<div>250 zł</div>",
+            "coupe": "<div>250 zł</div>"
+        },
+
+        "biggerCars": {
+            "sedan": "<div>300 zł</div>",
+            "cabriolet": "<div>300 zł</div>",
+            "liftback": "<div>300 zł</div>",
+            "combi": "<div>300 zł</div>",
+            "crossover": "<div>300 zł</div>",
+            "minivan": "<div>300 zł</div>",
+            "roadster": "<div>300 zł</div>",
+            "limousine": "<div>350 zł</div>",
+            "pickup": "<div>300 zł</div>",
+            "targa": "<div>300 zł</div>"
+        },
+
+        "trailer": {
+            "ps": "<div>Nie dotyczy</div>",
+            "w": "<div>Nie dotyczy</div>",
+            "c": "<div>Nie dotyczy</div>",
+            "ch": "<div>Nie dotyczy</div>",
+            "l": "<div>Nie dotyczy</div>",
+            "p": "<div>Nie dotyczy</div>",
+            "pdpz": "<div>Nie dotyczy</div>"
+        },
+
+        "suv": {
+            "bs": "<div>300 zł</div>",
+            "cs": "<div>300 zł</div>",
+            "ds": "<div>350 zł</div>",
+            "es": "<div>350 zł</div>"
+        },
+
+        "deliveryTruck": {
+            "f": "<div>400 zł</div>",
+            "v": "<div>400 zł</div>",
+            "sdk": "<div>400 zł</div>",
+            "sdp": "<div>400 zł</div>"
+        },
+
+        "truck": {
+            "l": "<div>450 zł</div>",
+            "s": "<div>450 zł</div>",
+            "c": "<div>450 zł</div>"
+        }
+    },
+
+    "oilChange": {
+        "twoWheeler": {
+            "bike": "<div>Nie dotyczy</div>",
+            "motorcycle": "<div>80 zł</div>",
+            "unicycle": "<div>Nie dotyczy</div>",
+            "scooter": "<div>Nie dotyczy</div>"
+        },
+
+        "atv": {
+            "quad": "<div>100 zł</div>",
+            "utv": "<div>100 zł</div>"
+        },
+
+        "smallCars": {
+            "micro": "<div>120 zł</div>",
+            "compact": "<div>120 zł</div>",
+            "hatchback": "<div>120 zł</div>",
+            "coupe": "<div>120 zł</div>"
+        },
+
+        "biggerCars": {
+            "sedan": "<div>150 zł</div>",
+            "cabriolet": "<div>150 zł</div>",
+            "liftback": "<div>150 zł</div>",
+            "combi": "<div>150 zł</div>",
+            "crossover": "<div>150 zł</div>",
+            "minivan": "<div>150 zł</div>",
+            "roadster": "<div>150 zł</div>",
+            "limousine": "<div>180 zł</div>",
+            "pickup": "<div>150 zł</div>",
+            "targa": "<div>150 zł</div>"
+        },
+
+        "trailer": {
+            "ps": "<div>Nie dotyczy</div>",
+            "w": "<div>Nie dotyczy</div>",
+            "c": "<div>Nie dotyczy</div>",
+            "ch": "<div>Nie dotyczy</div>",
+            "l": "<div>Nie dotyczy</div>",
+            "p": "<div>Nie dotyczy</div>",
+            "pdpz": "<div>Nie dotyczy</div>"
+        },
+
+        "suv": {
+            "bs": "<div>150 zł</div>",
+            "cs": "<div>150 zł</div>",
+            "ds": "<div>180 zł</div>",
+            "es": "<div>180 zł</div>"
+        },
+
+        "deliveryTruck": {
+            "f": "<div>200 zł</div>",
+            "v": "<div>200 zł</div>",
+            "sdk": "<div>200 zł</div>",
+            "sdp": "<div>200 zł</div>"
+        },
+
+        "truck": {
+            "l": "<div>250 zł</div>",
+            "s": "<div>250 zł</div>",
+            "c": "<div>250 zł</div>"
+        }
+    },
+
+    "filterChange": {
+        "twoWheeler": {
+            "bike": "<div>Nie dotyczy</div>",
+            "motorcycle": "<div>50 zł</div>",
+            "unicycle": "<div>Nie dotyczy</div>",
+            "scooter": "<div>Nie dotyczy</div>"
+        },
+
+        "atv": {
+            "quad": "<div>70 zł</div>",
+            "utv": "<div>70 zł</div>"
+        },
+
+        "smallCars": {
+            "micro": "<div>80 zł</div>",
+            "compact": "<div>80 zł</div>",
+            "hatchback": "<div>80 zł</div>",
+            "coupe": "<div>80 zł</div>"
+        },
+
+        "biggerCars": {
+            "sedan": "<div>100 zł</div>",
+            "cabriolet": "<div>100 zł</div>",
+            "liftback": "<div>100 zł</div>",
+            "combi": "<div>100 zł</div>",
+            "crossover": "<div>100 zł</div>",
+            "minivan": "<div>100 zł</div>",
+            "roadster": "<div>100 zł</div>",
+            "limousine": "<div>120 zł</div>",
+            "pickup": "<div>100 zł</div>",
+            "targa": "<div>100 zł</div>"
+        },
+
+        "trailer": {
+            "ps": "<div>Nie dotyczy</div>",
+            "w": "<div>Nie dotyczy</div>",
+            "c": "<div>Nie dotyczy</div>",
+            "ch": "<div>Nie dotyczy</div>",
+            "l": "<div>Nie dotyczy</div>",
+            "p": "<div>Nie dotyczy</div>",
+            "pdpz": "<div>Nie dotyczy</div>"
+        },
+
+        "suv": {
+            "bs": "<div>100 zł</div>",
+            "cs": "<div>100 zł</div>",
+            "ds": "<div>120 zł</div>",
+            "es": "<div>120 zł</div>"
+        },
+
+        "deliveryTruck": {
+            "f": "<div>150 zł</div>",
+            "v": "<div>150 zł</div>",
+            "sdk": "<div>150 zł</div>",
+            "sdp": "<div>150 zł</div>"
+        },
+
+        "truck": {
+            "l": "<div>200 zł</div>",
+            "s": "<div>200 zł</div>",
+            "c": "<div>200 zł</div>"
+        }
+    },
+
+    "computerDiagnostics": {
+        "twoWheeler": {
+            "bike": "<div>Nie dotyczy</div>",
+            "motorcycle": "<div>120 zł</div>",
+            "unicycle": "<div>Nie dotyczy</div>",
+            "scooter": "<div>Nie dotyczy</div>"
+        },
+
+        "atv": {
+            "quad": "<div>Nie dotyczy</div>",
+            "utv": "<div>Nie dotyczy</div>"
+        },
+
+        "smallCars": {
+            "micro": "<div>150 zł</div>",
+            "compact": "<div>150 zł</div>",
+            "hatchback": "<div>150 zł</div>",
+            "coupe": "<div>150 zł</div>"
+        },
+
+        "biggerCars": {
+            "sedan": "<div>180 zł</div>",
+            "cabriolet": "<div>180 zł</div>",
+            "liftback": "<div>180 zł</div>",
+            "combi": "<div>180 zł</div>",
+            "crossover": "<div>180 zł</div>",
+            "minivan": "<div>180 zł</div>",
+            "roadster": "<div>180 zł</div>",
+            "limousine": "<div>220 zł</div>",
+            "pickup": "<div>180 zł</div>",
+            "targa": "<div>180 zł</div>"
+        },
+
+        "trailer": {
+            "ps": "<div>Nie dotyczy</div>",
+            "w": "<div>Nie dotyczy</div>",
+            "c": "<div>Nie dotyczy</div>",
+            "ch": "<div>Nie dotyczy</div>",
+            "l": "<div>Nie dotyczy</div>",
+            "p": "<div>Nie dotyczy</div>",
+            "pdpz": "<div>Nie dotyczy</div>"
+        },
+
+        "suv": {
+            "bs": "<div>180 zł</div>",
+            "cs": "<div>180 zł</div>",
+            "ds": "<div>220 zł</div>",
+            "es": "<div>220 zł</div>"
+        },
+
+        "deliveryTruck": {
+            "f": "<div>250 zł</div>",
+            "v": "<div>250 zł</div>",
+            "sdk": "<div>250 zł</div>",
+            "sdp": "<div>250 zł</div>"
+        },
+
+        "truck": {
+            "l": "<div>300 zł</div>",
+            "s": "<div>300 zł</div>",
+            "c": "<div>300 zł</div>"
+        }
+    },
+
+    "suspensionRepairs": {
+        "twoWheeler": {
+            "bike": "<div>Nie dotyczy</div>",
+            "motorcycle": "<div>Nie dotyczy</div>",
+            "unicycle": "<div>Nie dotyczy</div>",
+            "scooter": "<div>Nie dotyczy</div>"
+        },
+
+        "atv": {
+            "quad": "<div>200 zł</div>",
+            "utv": "<div>200 zł</div>"
+        },
+
+        "smallCars": {
+            "micro": "<div>250 zł</div>",
+            "compact": "<div>250 zł</div>",
+            "hatchback": "<div>250 zł</div>",
+            "coupe": "<div>250 zł</div>"
+        },
+
+        "biggerCars": {
+            "sedan": "<div>300 zł</div>",
+            "cabriolet": "<div>300 zł</div>",
+            "liftback": "<div>300 zł</div>",
+            "combi": "<div>300 zł</div>",
+            "crossover": "<div>300 zł</div>",
+            "minivan": "<div>300 zł</div>",
+            "roadster": "<div>300 zł</div>",
+            "limousine": "<div>350 zł</div>",
+            "pickup": "<div>300 zł</div>",
+            "targa": "<div>300 zł</div>"
+        },
+
+        "trailer": {
+            "ps": "<div>Nie dotyczy</div>",
+            "w": "<div>Nie dotyczy</div>",
+            "c": "<div>Nie dotyczy</div>",
+            "ch": "<div>Nie dotyczy</div>",
+            "l": "<div>Nie dotyczy</div>",
+            "p": "<div>Nie dotyczy</div>",
+            "pdpz": "<div>Nie dotyczy</div>"
+        },
+
+        "suv": {
+            "bs": "<div>300 zł</div>",
+            "cs": "<div>300 zł</div>",
+            "ds": "<div>350 zł</div>",
+            "es": "<div>350 zł</div>"
+        },
+
+        "deliveryTruck": {
+            "f": "<div>400 zł</div>",
+            "v": "<div>400 zł</div>",
+            "sdk": "<div>400 zł</div>",
+            "sdp": "<div>400 zł</div>"
+        },
+
+        "truck": {
+            "l": "<div>450 zł</div>",
+            "s": "<div>450 zł</div>",
+            "c": "<div>450 zł</div>"
+        }
+    },
+
+    "brakeSystemRepairs": {
+        "twoWheeler": {
+            "bike": "<div>Nie dotyczy</div>",
+            "motorcycle": "<div>Nie dotyczy</div>",
+            "unicycle": "<div>Nie dotyczy</div>",
+            "scooter": "<div>Nie dotyczy</div>"
+        },
+
+        "atv": {
+            "quad": "<div>150 zł</div>",
+            "utv": "<div>150 zł</div>"
+        },
+
+        "smallCars": {
+            "micro": "<div>200 zł</div>",
+            "compact": "<div>200 zł</div>",
+            "hatchback": "<div>200 zł</div>",
+            "coupe": "<div>200 zł</div>"
+        },
+
+        "biggerCars": {
+            "sedan": "<div>250 zł</div>",
+            "cabriolet": "<div>250 zł</div>",
+            "liftback": "<div>250 zł</div>",
+            "combi": "<div>250 zł</div>",
+            "crossover": "<div>250 zł</div>",
+            "minivan": "<div>250 zł</div>",
+            "roadster": "<div>250 zł</div>",
+            "limousine": "<div>300 zł</div>",
+            "pickup": "<div>250 zł</div>",
+            "targa": "<div>250 zł</div>"
+        },
+
+        "trailer": {
+            "ps": "<div>Nie dotyczy</div>",
+            "w": "<div>Nie dotyczy</div>",
+            "c": "<div>Nie dotyczy</div>",
+            "ch": "<div>Nie dotyczy</div>",
+            "l": "<div>Nie dotyczy</div>",
+            "p": "<div>Nie dotyczy</div>",
+            "pdpz": "<div>Nie dotyczy</div>"
+        },
+
+        "suv": {
+            "bs": "<div>250 zł</div>",
+            "cs": "<div>250 zł</div>",
+            "ds": "<div>300 zł</div>",
+            "es": "<div>300 zł</div>"
+        },
+
+        "deliveryTruck": {
+            "f": "<div>350 zł</div>",
+            "v": "<div>350 zł</div>",
+            "sdk": "<div>350 zł</div>",
+            "sdp": "<div>350 zł</div>"
+        },
+
+        "truck": {
+            "l": "<div>400 zł</div>",
+            "s": "<div>400 zł</div>",
+            "c": "<div>400 zł</div>"
+        }
+    },
+
+    "steeringSystemRepairs": {
+        "twoWheeler": {
+            "bike": "<div>Nie dotyczy</div>",
+            "motorcycle": "<div>Nie dotyczy</div>",
+            "unicycle": "<div>Nie dotyczy</div>",
+            "scooter": "<div>Nie dotyczy</div>"
+        },
+
+        "atv": {
+            "quad": "<div>150 zł</div>",
+            "utv": "<div>150 zł</div>"
+        },
+
+        "smallCars": {
+            "micro": "<div>200 zł</div>",
+            "compact": "<div>200 zł</div>",
+            "hatchback": "<div>200 zł</div>",
+            "coupe": "<div>200 zł</div>"
+        },
+
+        "biggerCars": {
+            "sedan": "<div>250 zł</div>",
+            "cabriolet": "<div>250 zł</div>",
+            "liftback": "<div>250 zł</div>",
+            "combi": "<div>250 zł</div>",
+            "crossover": "<div>250 zł</div>",
+            "minivan": "<div>250 zł</div>",
+            "roadster": "<div>250 zł</div>",
+            "limousine": "<div>300 zł</div>",
+            "pickup": "<div>250 zł</div>",
+            "targa": "<div>250 zł</div>"
+        },
+
+        "trailer": {
+            "ps": "<div>Nie dotyczy</div>",
+            "w": "<div>Nie dotyczy</div>",
+            "c": "<div>Nie dotyczy</div>",
+            "ch": "<div>Nie dotyczy</div>",
+            "l": "<div>Nie dotyczy</div>",
+            "p": "<div>Nie dotyczy</div>",
+            "pdpz": "<div>Nie dotyczy</div>"
+        },
+
+        "suv": {
+            "bs": "<div>250 zł</div>",
+            "cs": "<div>250 zł</div>",
+            "ds": "<div>300 zł</div>",
+            "es": "<div>300 zł</div>"
+        },
+
+        "deliveryTruck": {
+            "f": "<div>350 zł</div>",
+            "v": "<div>350 zł</div>",
+            "sdk": "<div>350 zł</div>",
+            "sdp": "<div>350 zł</div>"
+        },
+
+        "truck": {
+            "l": "<div>400 zł</div>",
+            "s": "<div>400 zł</div>",
+            "c": "<div>400 zł</div>"
+        }
+    },
+
+    "airConditioningService": {
+        "twoWheeler": {
+            "bike": "<div>Nie dotyczy</div>",
+            "motorcycle": "<div>Nie dotyczy</div>",
+            "unicycle": "<div>Nie dotyczy</div>",
+            "scooter": "<div>Nie dotyczy</div>"
+        },
+
+        "atv": {
+            "quad": "<div>Nie dotyczy</div>",
+            "utv": "<div>Nie dotyczy</div>"
+        },
+
+        "smallCars": {
+            "micro": "<div>150 zł</div>",
+            "compact": "<div>150 zł</div>",
+            "hatchback": "<div>150 zł</div>",
+            "coupe": "<div>150 zł</div>"
+        },
+
+        "biggerCars": {
+            "sedan": "<div>180 zł</div>",
+            "cabriolet": "<div>180 zł</div>",
+            "liftback": "<div>180 zł</div>",
+            "combi": "<div>180 zł</div>",
+            "crossover": "<div>180 zł</div>",
+            "minivan": "<div>180 zł</div>",
+            "roadster": "<div>180 zł</div>",
+            "limousine": "<div>220 zł</div>",
+            "pickup": "<div>180 zł</div>",
+            "targa": "<div>180 zł</div>"
+        },
+
+        "trailer": {
+            "ps": "<div>Nie dotyczy</div>",
+            "w": "<div>Nie dotyczy</div>",
+            "c": "<div>Nie dotyczy</div>",
+            "ch": "<div>Nie dotyczy</div>",
+            "l": "<div>Nie dotyczy</div>",
+            "p": "<div>Nie dotyczy</div>",
+            "pdpz": "<div>Nie dotyczy</div>"
+        },
+
+        "suv": {
+            "bs": "<div>180 zł</div>",
+            "cs": "<div>180 zł</div>",
+            "ds": "<div>220 zł</div>",
+            "es": "<div>220 zł</div>"
+        },
+
+        "deliveryTruck": {
+            "f": "<div>250 zł</div>",
+            "v": "<div>250 zł</div>",
+            "sdk": "<div>250 zł</div>",
+            "sdp": "<div>250 zł</div>"
+        },
+
+        "truck": {
+            "l": "<div>300 zł</div>",
+            "s": "<div>300 zł</div>",
+            "c": "<div>300 zł</div>"
+        }
+    },
+
+    "carAudioSystemsMontageAndService": {
+        "twoWheeler": {
+            "bike": "<div>Nie dotyczy</div>",
+            "motorcycle": "<div>Nie dotyczy</div>",
+            "unicycle": "<div>Nie dotyczy</div>",
+            "scooter": "<div>Nie dotyczy</div>"
+        },
+
+        "atv": {
+            "quad": "<div>200 zł</div>",
+            "utv": "<div>200 zł</div>"
+        },
+
+        "smallCars": {
+            "micro": "<div>300 zł</div>",
+            "compact": "<div>300 zł</div>",
+            "hatchback": "<div>300 zł</div>",
+            "coupe": "<div>300 zł</div>"
+        },
+
+        "biggerCars": {
+            "sedan": "<div>400 zł</div>",
+            "cabriolet": "<div>400 zł</div>",
+            "liftback": "<div>400 zł</div>",
+            "combi": "<div>400 zł</div>",
+            "crossover": "<div>400 zł</div>",
+            "minivan": "<div>400 zł</div>",
+            "roadster": "<div>400 zł</div>",
+            "limousine": "<div>500 zł</div>",
+            "pickup": "<div>450 zł</div>",
+            "targa": "<div>400 zł</div>"
+        },
+
+        "trailer": {
+            "ps": "<div>Nie dotyczy</div>",
+            "w": "<div>Nie dotyczy</div>",
+            "c": "<div>Nie dotyczy</div>",
+            "ch": "<div>Nie dotyczy</div>",
+            "l": "<div>Nie dotyczy</div>",
+            "p": "<div>Nie dotyczy</div>",
+            "pdpz": "<div>Nie dotyczy</div>"
+        },
+
+        "suv": {
+            "bs": "<div>400 zł</div>",
+            "cs": "<div>400 zł</div>",
+            "ds": "<div>500 zł</div>",
+            "es": "<div>500 zł</div>"
+        },
+
+        "deliveryTruck": {
+            "f": "<div>550 zł</div>",
+            "v": "<div>550 zł</div>",
+            "sdk": "<div>550 zł</div>",
+            "sdp": "<div>550 zł</div>"
+        },
+
+        "truck": {
+            "l": "<div>600 zł</div>",
+            "s": "<div>600 zł</div>",
+            "c": "<div>600 zł</div>"
+        }
+    }
+}

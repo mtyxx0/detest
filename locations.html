@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailing - salony</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v7.0.0/css/pro.min.css">
+</head>
+<body>
+    <div class="loading">
+        <div class="loading-container">
+            <div class="loading-fill">
+                <div class="loading-title">
+                    <span class="title-text wait">Czekaj</span>
+                    <span class="title-text done">Gotowe!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="right"></div>
+
+    <div class="main-page">
+
+        <button class="locations-back">Wróć</button>
+
+        <div class="left">
+            <div class="title">PIEROG DETAILING</div>
+            <div class="subtitle">Lokalizacje salonów</div>
+
+            <div class="locations-wrapper">
+                <div class="location frst">
+                    <i class="fas fa-location-dot"></i> Four Points by Sheraton, Platt St
+                </div>
+
+                <div class="between">
+                    <div class="small"></div>
+                    <div class="big"></div>
+                    <div class="big"></div>
+                    <div class="small"></div>
+                </div>
+                
+                <div class="location scnd">
+                    <i class="fas fa-location-dot"></i> Four Points by Sheraton, Platt St
+                </div>
+                
+                <div class="between">
+                    <div class="small"></div>
+                    <div class="big"></div>
+                    <div class="big"></div>
+                    <div class="small"></div>
+                </div>
+                
+                <div class="location thrd">
+                    <i class="fas fa-location-dot"></i> Four Points by Sheraton, Platt St
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="main.js"></script>
+    <script>
+        let locationsButtons = {
+            "first": document.querySelector(".frst"),
+            "second": document.querySelector(".scnd"),
+            "third": document.querySelector(".thrd")
+        }
+
+        let locations = {
+            "first": {
+                "x": 52.2297,
+                "y": 21.0122,
+                "zoom": 12
+            },
+
+            "second": {
+                "x": 50.0647,
+                "y": 19.9450,
+                "zoom": 12
+            },
+
+            "third": {
+                "x": 53.4285,
+                "y": 14.5528,
+                "zoom": 12
+            }
+        }
+        
+        document.addEventListener("DOMContentLoaded", function() {
+            const map = L.map('right').setView([52.2297, 21.0122], 12);
+
+            L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                maxZoom: 19
+            }).addTo(map);
+
+            map.invalidateSize();
+
+            for (const key in locationsButtons) {
+                locationsButtons[key].addEventListener("click", ()=>{
+                    map.setView([locations[key]["x"], locations[key]["y"]], locations[key]["zoom"])
+                })
+            }
+        });
+    </script>
+</body>
+</html>

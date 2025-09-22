@@ -1,1 +1,33 @@
-
+{
+    "mainTitle": "Detailing your car has never ",
+    "mainTitleSpan": "been ",
+    "mainTitleEnd": "easier.",
+    "mainSubtitle": "we pretend high-quality detailing services",
+    "mainServices": "Services",
+    "mainContact": "Contact",
+    "servicesTitle": "our services",
+    "firstServiceName": "Full Car Care",
+    "secondServiceName": "Oil change",
+    "thirdServiceName": "Underbody Protection",
+    "fourthServiceName": "Car painting",
+    "firstServiceContent": "We offer professional car interior cleaning, restoring freshness and cleanliness.",
+    "secondServiceContent": "Professional engine oil and filter change, designed to prolong engine life and maintain optimal vehicle performance.",
+    "thirdServiceContent": "We safeguard the vehicle’s underbody against rust and mechanical damage with advanced anti-corrosion products.",
+    "fourthServiceContent": "We provide professional car body painting and minor paint touch-ups, bringing back your vehicle’s polished, flawless look.",
+    "fewServicesInfo": "These are just a few of the many services we offer.",
+    "seeMoreServices": "See them all",
+    "aboutTitle": "about us",
+    "aboutContent": "Hey there! We're NAME, a team building solutions that (hopefully) make life a bit easier. Right now, we're in beta, figuring things out and shaping what we do best. Stick around – we're growing, experimenting, and excited to see where this goes.",
+    "contactTitle": "contact with us",
+    "copyright": "All rights reserved.",
+    "follow": "follow",
+    "allServicesTitle": "services",
+    "welcomeText": "Welcome",
+    "placeholders": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone number",
+        "message": "Your message",
+        "submit": "Send"
+    }
+}

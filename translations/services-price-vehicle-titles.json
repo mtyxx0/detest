@@ -1,0 +1,12 @@
+{
+    "pl": {
+        "twoWheeler": "Jednośladowce",
+        "atv": "ATV",
+        "smallCars": "Małe samochody osobowe",
+        "biggerCars": "Duże samochody osobowe",
+        "trailer": "Naczepy",
+        "suv": "SUV'y",
+        "deliveryTruck": "Samochody dostawcze",
+        "truck": "Ciężarówki"
+    }
+}

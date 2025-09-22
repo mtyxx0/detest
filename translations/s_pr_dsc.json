@@ -1,0 +1,30 @@
+{
+    "pl": {
+        "handWashing": "Ręczne mycie detailingowe to precyzyjna usługa pielęgnacji auta, wykonywana ręcznie przy użyciu specjalistycznych środków lub przy użyciu myjki ciśnieniowej.",
+        "interiorCleaning": "Czyszczenie wnętrza to dokładne odkurzanie kabiny wraz z trudno dostępnymi miejscami, czyszczenie plastików, nawiewów, szyb oraz innych elementów wyposażenia.",
+        "upholsteryCleaning": "Pranie tapicerki to dogłębne czyszczenie materiałowych elementów wnętrza pojazdu, takich jak fotele, kanapy, boczki czy podsufitka.",
+        "interiorOzonation": "Ozonowanie wnętrza polega na zastosowaniu ozonu, który neutralizuje drobnoustroje, alergeny oraz nieprzyjemne zapachy. Zabieg pozostawia kabinę czystą i świeżą.",
+        "paintCorrection": "Korekta lakieru poprawia wygląd karoserii, usuwając rysy, zmatowienia i niedoskonałości, przywracając blask i gładkość powierzchni.",
+        "ceramicCoatings": "Powłoki ceramiczne tworzą trwałą ochronę lakieru, zwiększając odporność na zarysowania, zabrudzenia i czynniki atmosferyczne, podkreślając głębię koloru.",
+        "waxApplication": "Aplikacja wosków zabezpiecza lakier przed zabrudzeniami, nadaje mu głęboki połysk i sprawia, że codzienne mycie staje się łatwiejsze.",
+        "chassisInspection": "Inspekcja podwozia pozwala wykryć wszystkie uszkodzenia, wycieki i oznaki korozji, dbając o bezpieczeństwo oraz długowieczność pojazdu.",
+        "antiCorrosionProtection": "Zabezpieczenie antykorozyjne chroni metalowe elementy pojazdu przed rdzą i szkodliwym działaniem wilgoci oraz czynników zewnętrznych.",
+        "paintingAndImpregnation": "Malowanie i impregnacja przywraca lakierowi jego naturalny wygląd, wzmacnia ochronę przed zabrudzeniami i wydłuża trwałość powłoki.",
+        "impregnation": "Impregnacja chroni tapicerkę, plastiki i powierzchnie wnętrza przed plamami, wilgocią oraz codziennymi zabrudzeniami, zachowując ich świeżość.",
+        "carWrapping": "Car wrapping zmienia wygląd pojazdu, chroni lakier przed zarysowaniami i nadaje indywidualny charakter, jednocześnie zwiększając odporność na czynniki zewnętrzne.",
+        "ppfWrapping": "PPF wrapping zabezpiecza lakier samochodu przed zarysowaniami, odpryskami i czynnikami atmosferycznymi, zachowując jego oryginalny wygląd.",
+        "polishing": "Polerowanie usuwa rysy i zmatowienia, przywraca głęboki połysk lakieru oraz poprawia estetykę i wizualny efekt całej karoserii.",
+        "windowTining": "Przyciemnianie szyb poprawia komfort i prywatność, redukuje nagrzewanie wnętrza samochodu i chroni przed szkodliwym promieniowaniem UV.",
+        "wheelArchProtection": "Ochrona wnęk nadkoli zabezpiecza przed odpryskami kamieni, korozją i zabrudzeniami, utrzymując podwozie w idealnym stanie przez lata.",
+        "thresholdProtection": "Ochrona progów chroni wrażliwe elementy karoserii przed zarysowaniami, ścieraniem i uszkodzeniami mechanicznymi podczas codziennej eksploatacji.",
+        "chassisProtection": "Ochrona podwozia zabezpiecza metalowe elementy przed rdzą, zabrudzeniami i szkodliwymi czynnikami zewnętrznymi, zapewniając trwałość pojazdu.",
+        "oilChange": "Wymiana olejów zapewnia optymalną pracę silnika, chroni jego komponenty przed zużyciem i poprawia wydajność oraz ekonomię paliwową.",
+        "filterChange": "Wymiana filtrów powietrza i oleju poprawia przepływ mediów, chroni silnik przed zanieczyszczeniami i zwiększa jego żywotność oraz wydajność.",
+        "computerDiagnostics": "Diagnostyka komputerowa umożliwia szybkie wykrycie błędów, awarii i usterek, co pozwala na precyzyjne naprawy i sprawne działanie pojazdu.",
+        "suspensionRepairs": "Naprawy zawieszenia przywracają komfort jazdy, stabilność oraz bezpieczeństwo prowadzenia pojazdu w każdych warunkach drogowych.",
+        "brakeSystemRepairs": "Naprawy układu hamulcowego zapewniają skuteczne hamowanie, poprawiają bezpieczeństwo i pewność prowadzenia w różnych warunkach.",
+        "steeringSystemRepairs": "Naprawy układu kierowniczego przywracają precyzję prowadzenia, komfort jazdy oraz bezpieczeństwo podczas codziennej eksploatacji pojazdu.",
+        "airConditioningService": "Serwis klimatyzacji zapewnia optymalną wydajność, dba o czystość układu i prawidłowe chłodzenie wnętrza pojazdu w każdej porze roku.",
+        "carAudioSystemsMontageAndService": "Montaż i serwis systemów car audio gwarantuje wysoką jakość dźwięku, niezawodność sprzętu oraz pełną satysfakcję z odsłuchu."
+    }
+}

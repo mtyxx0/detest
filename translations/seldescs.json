@@ -1,0 +1,65 @@
+{
+    "pl": {
+        "twoWheeler": [
+            "<div>Rower</div>",
+            "<div>Motocykl</div>",
+            "<div>Monocykl</div>",
+            "<div>Hulajnoga (zwyk. i elek.)</div>"
+        ],
+
+        "atv": [
+            "<div>Quad</div>",
+            "<div>UTV</div>"
+        ],
+
+        "smallCars": [
+            "<div>Mikrosamochód</div>",
+            "<div>Kompakt</div>",
+            "<div>Hatchback</div>",
+            "<div>Coupe</div>"
+        ],
+
+        "biggerCars": [
+            "<div>Sedan</div>",
+            "<div>Kabriolet</div>",
+            "<div>Liftback</div>",
+            "<div>Kombi</div>",
+            "<div>Crossover</div>",
+            "<div>Minivan</div>",
+            "<div>Roadster</div>",
+            "<div>Limuzyna</div>",
+            "<div>Pickup</div>",
+            "<div>Targa</div>"
+        ],
+
+        "trailer": [
+            "<div>Przyczepa skrzyniowa</div>",
+            "<div>Wywrotka</div>",
+            "<div>Cysterna (do 500L poj.)</div>",
+            "<div>Chłodnia</div>",
+            "<div>Laweta</div>",
+            "<div>Platforma</div>",
+            "<div>Przycz. do przewozu zwierząt</div>"
+        ],
+
+        "suv": [
+            "<div>B-SUV</div>",
+            "<div>C-SUV</div>",
+            "<div>D-SUV</div>",
+            "<div>E-SUV</div>"
+        ],
+
+        "deliveryTruck": [
+            "<div>Furgon</div>",
+            "<div>Van</div>",
+            "<div>Sam. dst. kontener</div>",
+            "<div>Sam. dst. plandeka</div>"
+        ],
+
+        "truck": [
+            "<div>Lekka ciężarówka (3,5–7,5 t)</div>",
+            "<div>Średnia ciężarówka (7,5-12 t)</div>",
+            "<div>Ciężka ciężarówka (>12 t)</div>"
+        ]
+    }
+}

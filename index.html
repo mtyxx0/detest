@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v7.0.0/css/pro.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="in">
+        <div data-i18n="welcomeText" class="in-welcome"></div>
+
+        <div class="transition"></div>
+    </div>
+
+    <div class="page-content">
+        
+        <div class="asl">
+            <div class="box1-2"></div>
+            <div class="main-title-2" data-i18n="allServicesTitle"></div>
+
+            <div class="back-to-main"><i class="fat fa-house"></i></div>
+
+            <div class="all-services-list"></div>
+            
+            <div class="srcv">
+                <div class="service-details">
+                    <button class="service-details-back"><i class="fat fa-octagon-xmark"></i></button>
+    
+                    <div class="service-name">Ręczne mycie detailingowe</div>
+    
+                    <div class="service-preview"></div>
+    
+                    <div class="srcv-content">
+                        <div class="service-desc">
+                            <div class="html-replace"></div>
+                        </div>
+        
+                        <div class="price-list-wrapper">
+                            <button class="price-list">Zobacz cennik</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-up"><i class="fas fa-arrow-up"></i></div>
+
+        <div class="box main-hidden"></div>
+    
+        <div class="main-page">
+            <div class="menu main-hidden">
+                <div class="menu-button home"><i class="fal fa-house"></i></div>
+                <div class="menu-button services"><i class="fal fa-diamond"></i></div>
+                <div class="menu-button about"><i class="fal fa-circle-info"></i></div>
+                <div class="menu-button contact"><i class="fal fa-phone"></i></div>
+            </div>
+    
+            <div class="languages main-hidden">
+                <div class="polish language"></div>
+                <div class="english language"></div>
+                <div class="russian language"></div>
+                <div class="spanish language"></div>
+                <div class="ukrainian language"></div>
+            </div>
+    
+            <div data-i18n="mainTitle" class="main-title main-hidden">
+                <span class="highlight"></span>
+                <span class="end"></span>
+            </div>
+            <div class="main-subtitle main-hidden" data-i18n="mainSubtitle"></div>
+    
+            <div class="main-buttons">
+                <div class="main-button-template services main-hidden">
+                    <div class="main-button main-more-services" data-i18n="mainServices"></div>
+                </div>
+    
+                <div class="main-button-template contact main-hidden">
+                    <div class="main-button contact-us-button" data-i18n="mainContact"></div>
+                </div>
+            </div>
+    
+            <div class="image-1 main-hidden"></div>
+            <div class="image-2 main-hidden"></div>
+            <div class="image-3 main-hidden"></div>
+
+        </div>
+    
+        <div class="services-page">
+            <div class="box-2 hidden"></div>
+
+            <div class="services-title hidden transitionable" data-i18n="servicesTitle"></div>
+    
+            <div class="services-list">
+                <div class="service lt hidden transitionable">
+                    <div class="service-header">
+                        <i class="fal fa-diamond"></i>
+                        <span data-i18n="firstServiceName"></span>
+                    </div>
+            
+                    <div class="service-content" data-i18n="firstServiceContent"></div>
+                </div>
+            
+                <div class="service rt hidden transitionable">
+                    <div class="service-header">
+                        <i class="fal fa-diamond"></i>
+                        <span data-i18n="secondServiceName"></span>
+                    </div>
+            
+                    <div class="service-content" data-i18n="secondServiceContent"></div>
+                </div>
+            
+                <div class="service lb hidden transitionable">
+                    <div class="service-header">
+                        <i class="fal fa-diamond"></i>
+                        <span data-i18n="thirdServiceName"></span>
+                    </div>
+            
+                    <div class="service-content" data-i18n="thirdServiceContent"></div>
+                </div>
+            
+                <div class="service rb hidden transitionable">
+                    <div class="service-header">
+                        <i class="fal fa-diamond"></i>
+                        <span data-i18n="fourthServiceName"></span>
+                    </div>
+            
+                    <div class="service-content" data-i18n="fourthServiceContent"></div>
+                </div>
+            </div>        
+    
+            <div class="services-few">
+                <span data-i18n="fewServicesInfo" class="few-services-info hidden transitionable"></span>
+    
+                <button class="more-services hidden" data-i18n="seeMoreServices"></button>
+                <button class="a-make hidden" data-i18n="makeAppointment"></button>
+            </div>
+        </div>
+    
+        <div class="about-page">
+            <div class="box-3 hidden"></div>
+
+            <div class="about-title hidden transitionable" data-i18n="aboutTitle"></div>
+    
+            <div class="about-content hidden transitionable" data-i18n="aboutContent"></div>
+
+            <div class="about-socials">
+                <i class="fa-brands fa-facebook" id="FBL"></i>
+                <i class="fa-brands fa-instagram" id="IGL"></i>
+            </div>
+
+            <div class="about-socials-pc">
+                <i class="fa-brands fa-facebook" id="FBL2"></i>
+                <i class="fa-brands fa-instagram" id="IGL2"></i>
+            </div>
+        </div>
+
+        <div class="blog-page">
+            <div class="box-5"></div>
+            <div class="blog-title">blog</div>
+
+            <button class="open-all-blog">Zobacz wszystkie wpisy</button>
+
+            <div class="blog-subtitle">Najnowsze wpisy</div>
+
+            <div class="three-sample">
+                <div class="newest">
+                    <div class="sample-thumbnail"></div>
+                    
+                    <div class="date">Sobota, 1 St. 2025</div>
+                
+                    <div class="title-wrapper">
+                        <div class="blog-sample-title">Bill Walsh leadership lessons</div>
+
+                        <button class="open-blog"><i class="fal fa-arrow-up-right"></i></button>
+                    </div>
+
+                    <div class="blog-description">Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?</div>
+
+                    <div class="blog-filters">
+                        <div class="blog-filter">Leadership</div>
+                        <div class="blog-filter">Managment</div>
+                        <div class="blog-filter">Presentation</div>
+                    </div>
+                </div>
+    
+                <div class="newer">
+                    <div class="sample-thumbnail"></div>
+                    
+                    <div class="date">Sobota, 1 St. 2025</div>
+                
+                    <div class="title-wrapper">
+                        <div class="blog-sample-title">Bill Walsh leadership lessons</div>
+
+                        <button class="open-blog"><i class="fal fa-arrow-up-right"></i></button>
+                    </div>
+
+                    <div class="blog-description">Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?</div>
+
+                    <div class="blog-filters">
+                        <div class="blog-filter">Leadership</div>
+                        <div class="blog-filter">Managment</div>
+                        <div class="blog-filter">Presentation</div>
+                    </div>
+                </div>
+    
+                <div class="new">
+                    <div class="sample-thumbnail"></div>
+                    
+                    <div class="date">Sobota, 1 St. 2025</div>
+                
+                    <div class="title-wrapper">
+                        <div class="blog-sample-title">Bill Walsh leadership lessons</div>
+
+                        <button class="open-blog"><i class="fal fa-arrow-up-right"></i></button>
+                    </div>
+
+                    <div class="blog-description">Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?</div>
+
+                    <div class="blog-filters">
+                        <div class="blog-filter">Leadership</div>
+                        <div class="blog-filter">Managment</div>
+                        <div class="blog-filter">Presentation</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="contact-page">
+            <div class="box-4 hidden"></div>
+
+            <div class="contact-title hidden transitionable" data-i18n="contactTitle"></div>
+    
+            <div class="contact-info">
+                <div class="mail info hidden transitionable">
+                    <i class="fat fa-envelope"></i>
+                    <span class="mail-address-info">mail@mail.com</span>
+                </div>
+    
+                <div class="phone info hidden transitionable">
+                    <i class="fat fa-phone"></i>
+                    <span class="phone-number-info">123 456 789</span>
+                </div>
+    
+                <div class="pin info hidden transitionable" title="Kliknij">
+                    <i class="fat fa-location-dot"></i> Sprawdź lokalizację naszych salonów
+                </div>
+            </div>
+
+            <div class="contact-info-data">123-456-789</div>
+    
+            <form class="contact-container">
+                <input type="text" class="name hidden transitionable" placeholder="Name" required>
+                <input type="email" class="email hidden transitionable" placeholder="Email" required>
+                <input type="tel" class="phone-number hidden transitionable" placeholder="Phone number" required>
+                <textarea class="message-content hidden transitionable" maxlength="1000" placeholder="Your message"></textarea>
+    
+                <input type="submit" class="send hidden transitionable" value="Prześlij">
+                <div class="characters hidden transitionable">0/1000</div>
+            </div>
+        </div>
+    
+        <div class="footer">
+            <div class="footer-content"></div>
+    
+            <div class="social">
+                <div class="socials">
+                    <i class="fa-brands fa-facebook" id="FBL2"></i>
+                    <i class="fa-brands fa-instagram" id="IGL2"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script async src="//www.instagram.com/embed.js"></script>
+    <script src="main.js" type="module"></script>
+</body>
+</html>

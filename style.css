@@ -121,7 +121,7 @@ body, html {
     font-size: 1.823vw;
     color: #f0f0f0;
     position: absolute;
-    width: 24vw;
+    width: 32vw;
     height: 4vh;
     transform: translate(0%, 0%) scale(1);
     left: 7vw;
@@ -594,8 +594,8 @@ button.a-make:hover {
     z-index: 99999999999999999999999;
     overflow-x: auto;
     transform: translate(0%, 0%);
-    left: 0;
     top: 0;
+    left: 0;
 }
 
 .all-services-list {
@@ -895,13 +895,13 @@ button.service-details-back:hover {
 }
 
 .ukrainian {
-    background-image: url("img/ukrainian.png");
+    background-image: url("/img/ukrainian.png");
     background-size: cover;
     background-position: center;
 }
 
 .spanish {
-    background-image: url("img/spain.png");
+    background-image: url("/img/spain.png");
     background-size: cover;
     background-position: center;
 }
@@ -957,9 +957,17 @@ button.service-details-back:hover {
     transform: translateY(3vw);
 }
 
+.pin.info {
+    cursor: pointer;
+    transition: .2s;
+}
+
+.pin.info:hover {
+    transform: scale(1.025);
+}
+
 .box, .box-2, .box-3, .box-4,
 .main-title, .main-subtitle,
-.image-1, .image-2, .image-3,
 .main-button-template, .menu,
 .languages, .transitionable,
 .box-5 {

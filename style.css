@@ -592,7 +592,10 @@ button.a-make:hover {
     display: none;
     position: fixed;
     z-index: 99999999999999999999999;
-    /* overflow-x: auto; */
+    overflow-x: auto;
+    transform: translate(-50%, -50%);
+    left: 0;
+    top: 0;
 }
 
 .all-services-list {

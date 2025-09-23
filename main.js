@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     //     });
     // }, { rootMargin: "200px" });
 
-    Object.values(Services).forEach(el => observer.observe(el));
+    // Object.values(Services).forEach(el => observer.observe(el));
 
     for (const key in Services) {
         Services[key].querySelector(".service-read-more").addEventListener("click", () => {

@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             if (entry.isIntersecting) {
                 const thumb = entry.target.querySelector(".service-thumbnail");
                 const src = thumb.getAttribute("data-src");
-                thumb.style.backgroundImage = `url(${src})`;
+                thumb.style.backgroundImage = `url(/${src})`;
                 thumb.style.backgroundSize = "cover";
                 thumb.style.backgroundPosition = "center";
                 thumb.style.backgroundRepeat = "no-repeat";

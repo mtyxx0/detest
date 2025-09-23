@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         div.innerHTML = `
             <div class="service-title">${servicesData[currentLang][key]}</div>
-            <div class="service-thumbnail" style="background-image: url(img/${imagesData[key]});"></div>
+            <div class="service-thumbnail" style="background-image: url(img/${imagesData[key]}); background-size: cover; background-position: center;"></div>
             <div class="service-description">${prDscData[currentLang][key]}</div>
             <button class="service-read-more ${key}">Zobacz</button>
         `;

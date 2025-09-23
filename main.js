@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         div.innerHTML = `
             <div class="service-title">${servicesData[currentLang][key]}</div>
-            <div class="service-thumbnail" data-src="detest/img/${imagesData[key]}"></div>
+            <div class="service-thumbnail" style="background-image: url(img/${imagesData[key]});"></div>
             <div class="service-description">${prDscData[currentLang][key]}</div>
             <button class="service-read-more ${key}">Zobacz</button>
         `;
@@ -142,19 +142,19 @@ document.addEventListener("DOMContentLoaded", async () => {
         allServicesList.appendChild(fragment);
     }
 
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const thumb = entry.target.querySelector(".service-thumbnail");
-                const src = thumb.getAttribute("data-src");
-                thumb.style.backgroundImage = `url(/${src})`;
-                thumb.style.backgroundSize = "cover";
-                thumb.style.backgroundPosition = "center";
-                thumb.style.backgroundRepeat = "no-repeat";
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { rootMargin: "200px" });
+    // const observer = new IntersectionObserver(entries => {
+    //     entries.forEach(entry => {
+    //         if (entry.isIntersecting) {
+    //             const thumb = entry.target.querySelector(".service-thumbnail");
+    //             const src = thumb.getAttribute("data-src");
+    //             thumb.style.backgroundImage = `url(/${src})`;
+    //             thumb.style.backgroundSize = "cover";
+    //             thumb.style.backgroundPosition = "center";
+    //             thumb.style.backgroundRepeat = "no-repeat";
+    //             observer.unobserve(entry.target);
+    //         }
+    //     });
+    // }, { rootMargin: "200px" });
 
     Object.values(Services).forEach(el => observer.observe(el));
 

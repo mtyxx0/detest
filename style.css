@@ -895,13 +895,13 @@ button.service-details-back:hover {
 }
 
 .ukrainian {
-    background-image: url("/img/ukrainian.png");
+    background-image: url("img/ukrainian.png");
     background-size: cover;
     background-position: center;
 }
 
 .spanish {
-    background-image: url("/img/spain.png");
+    background-image: url("img/spain.png");
     background-size: cover;
     background-position: center;
 }

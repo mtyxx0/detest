@@ -874,31 +874,31 @@ button.service-details-back:hover {
 }
 
 .polish {
-    background-image: url("/img/polish.png");
+    background-image: url("img/polish.png");
     background-size: cover;
     background-position: center;
 }
 
 .english {
-    background-image: url("/img/uk.png");
+    background-image: url("img/uk.png");
     background-size: cover;
     background-position: center;
 }
 
 .russian {
-    background-image: url("/img/russian.png");
+    background-image: url("img/russian.png");
     background-size: cover;
     background-position: center;
 }
 
 .ukrainian {
-    background-image: url("/img/ukrainian.png");
+    background-image: url("img/ukrainian.png");
     background-size: cover;
     background-position: center;
 }
 
 .spanish {
-    background-image: url("/img/spain.png");
+    background-image: url("img/spain.png");
     background-size: cover;
     background-position: center;
 }

@@ -6,7 +6,8 @@ body, html {
     background: #131212;
     overflow-x: hidden;
     overflow-y: hidden;
-    width: 100%;
+    width: 100vw;
+    /* height: 100%; */
 }
 
 ::-webkit-scrollbar {
@@ -254,8 +255,10 @@ body, html {
 }
 
 .main-page, .services-page, .about-page, .contact-page, .blog-page {
-    width: 100vw;
-    height: 100vh;
+    width: 100vw !important;
+    height: 100vh !important;
+    height: 100dvh;
+    position: relative;
 }
 
 .blog-page {

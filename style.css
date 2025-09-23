@@ -593,7 +593,7 @@ button.a-make:hover {
     position: fixed;
     z-index: 99999999999999999999999;
     overflow-x: auto;
-    transform: translate(-50%, -50%);
+    transform: translate(0%, 0%);
     left: 0;
     top: 0;
 }

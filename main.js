@@ -561,7 +561,7 @@ function CreatePriceList(fclass, name, thumbnail, LOR) {
     let rightSide = document.querySelector(".right-side");
 
     const html = `<div class="pexm ${fclass} fh">
-                    <div class="pexm-thumbnail" style="background-image: url(/img/${thumbnail});"></div>
+                    <div class="pexm-thumbnail" style="background-image: url(img/${thumbnail});"></div>
                     <div class="pexm-footer">
                         <div class="pexm-name">${name}</div>
                     </div>

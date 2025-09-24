@@ -1937,7 +1937,7 @@ button.add-new-person:hover {
     left: 50%;
     top: 50%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 2vw;
 }

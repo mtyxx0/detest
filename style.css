@@ -263,7 +263,7 @@ body, html {
 
 .blog-page {
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 .page-content {

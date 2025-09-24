@@ -75,7 +75,7 @@ body, html {
     position: relative;
     transform: translate(0%, 0%);
     left: 6vw;
-    top: 10vw;
+    top: 6vw;
     background-image: radial-gradient(circle, #333 .1vw, transparent .1vw);
     background-size: .45vw .42vw;
 }
@@ -410,7 +410,7 @@ button.a-make:hover {
     position: relative;
     transform: translate(0%, 0%);
     left: 7.5vw;
-    top: 7.25vw;
+    top: 3.25vw;
     text-shadow: 0 0 2vw #ffd613;
     z-index: 999;
 }
@@ -959,7 +959,7 @@ button.service-details-back:hover {
 
 .pin.info {
     cursor: pointer;
-    transition: .2s;
+    transition: transform .4s;
 }
 
 .pin.info:hover {
@@ -1920,8 +1920,8 @@ button.add-new-person:hover {
     position: relative;
     transform: translate(-50%, 0%);
     left: 50%;
-    top: 7.5vw;
-    z-index: 100;
+    top: 0vw;
+    z-index: 1000;
 }
 
 .open-all-blog:hover {
@@ -1935,7 +1935,7 @@ button.add-new-person:hover {
     position: relative;
     transform: translate(-50%, -50%);
     left: 50%;
-    top: 50%;
+    top: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1944,7 +1944,7 @@ button.add-new-person:hover {
 
 .newest, .newer, .new {
     width: 25vw;
-    height: 28vw;
+    height: 32vw;
 }
 
 .main-entry {
@@ -2061,7 +2061,7 @@ button.main-entry-open-blog:hover {
     position: relative;
     transform: translate(0%, -50%);
     left: 10.5vw;
-    top: 18%;
+    top: 8%;
 }
 
 .blog-title2 {

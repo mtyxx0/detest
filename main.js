@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         div.innerHTML = `
             <div class="service-title">${servicesData[currentLang][key]}</div>
-            <div class="service-thumbnail" style="background-image: url(img/${imagesData[key]}); background-size: cover; background-position: center;"></div>
+            <div class="service-thumbnail" data-src="/img/${imagesData[key]}"></div>
             <div class="service-description">${prDscData[currentLang][key]}</div>
             <button class="service-read-more ${key}">Zobacz</button>
         `;
@@ -142,21 +142,21 @@ document.addEventListener("DOMContentLoaded", async () => {
         allServicesList.appendChild(fragment);
     }
 
-    // const observer = new IntersectionObserver(entries => {
-    //     entries.forEach(entry => {
-    //         if (entry.isIntersecting) {
-    //             const thumb = entry.target.querySelector(".service-thumbnail");
-    //             const src = thumb.getAttribute("data-src");
-    //             thumb.style.backgroundImage = `url(/${src})`;
-    //             thumb.style.backgroundSize = "cover";
-    //             thumb.style.backgroundPosition = "center";
-    //             thumb.style.backgroundRepeat = "no-repeat";
-    //             observer.unobserve(entry.target);
-    //         }
-    //     });
-    // }, { rootMargin: "200px" });
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const thumb = entry.target.querySelector(".service-thumbnail");
+                const src = thumb.getAttribute("data-src");
+                thumb.style.backgroundImage = `url(${src})`;
+                thumb.style.backgroundSize = "cover";
+                thumb.style.backgroundPosition = "center";
+                thumb.style.backgroundRepeat = "no-repeat";
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { rootMargin: "200px" });
 
-    // Object.values(Services).forEach(el => observer.observe(el));
+    Object.values(Services).forEach(el => observer.observe(el));
 
     for (const key in Services) {
         Services[key].querySelector(".service-read-more").addEventListener("click", () => {
@@ -303,7 +303,7 @@ if (ContactUs) {
 }
 
 async function setLanguage(lang) {
-    const translations = await fetch(`./languages/${lang}.json`).then(res => res.json());
+    const translations = await fetch(`/languages/${lang}.json`).then(res => res.json());
 
     document.querySelectorAll('[data-i18n]').forEach(el => {
         if (el.dataset.i18n !== 'mainTitle') {
@@ -364,31 +364,62 @@ let isTrue = true;
 
 if (welcomeText) {
     document.addEventListener("DOMContentLoaded", ()=>{
-        setTimeout(() => {
-            welcomeText.style.opacity = "1";
-            welcomeText.style.top = "20%";
-        
+        const skipWelcome = sessionStorage.getItem("skipWelcome");
+
+        if (skipWelcome) {
+            sessionStorage.removeItem("skipWelcome");
+            welcomePage.style.display = "none";
+            mainPageShow();
+            document.body.style.overflowY = "auto";
+            document.documentElement.style.overflowY = "auto";
+            isTrue = false;
+            ASL.style.display = "block";
+
+            setTimeout(() => { 
+                ASL.style.opacity = "1";
+            }, 0);
+    
+            int = setInterval(() => {
+                document.body.style.overflow = "hidden";
+                document.documentElement.style.overflow = "hidden";
+            }, 10);
+
+            window.scrollTo(0, 0);
+        } else {
             setTimeout(() => {
-                welcomeTransition.style.width = "100vw";
-        
+                welcomeText.style.opacity = "1";
+                welcomeText.style.top = "20%";
+            
                 setTimeout(() => {
-                    welcomeTransition.style.height = "100vh";
-        
+                    welcomeTransition.style.width = "100vw";
+                
                     setTimeout(() => {
-                        isTrue = false;
-                        document.body.style.overflowY = "auto";
-                        document.documentElement.style.overflowY = "auto";
-                        welcomePage.style.transition = "none";
-        
+                        welcomeTransition.style.height = "100vh";
                         setTimeout(() => {
-                            welcomePage.style.display = "none";
-        
-                            mainPageShow()
-                        }, 1);
+                            isTrue = false;
+                            document.body.style.overflowY = "auto";
+                            document.documentElement.style.overflowY = "auto";
+                            welcomePage.style.transition = "none";
+                        
+                            setTimeout(() => {
+                                welcomePage.style.display = "none";
+                            
+                                mainPageShow()
+                            }, 1);
+                        }, 1000);
                     }, 1000);
-                }, 1000);
-            }, 1500);
-        }, 500);
+                }, 1500);
+            }, 500);
+        }
+    })
+}
+
+let OSBack = document.querySelector(".osback");
+
+if (OSBack) {
+    OSBack.addEventListener("click", ()=>{
+        sessionStorage.setItem("skipWelcome", "true")
+        window.location.href = "index.html";
     })
 }
 
@@ -561,7 +592,7 @@ function CreatePriceList(fclass, name, thumbnail, LOR) {
     let rightSide = document.querySelector(".right-side");
 
     const html = `<div class="pexm ${fclass} fh">
-                    <div class="pexm-thumbnail" style="background-image: url(img/${thumbnail});"></div>
+                    <div class="pexm-thumbnail" style="background-image: url(/img/${thumbnail});"></div>
                     <div class="pexm-footer">
                         <div class="pexm-name">${name}</div>
                     </div>

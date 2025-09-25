@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         div.innerHTML = `
             <div class="service-title">${servicesData[currentLang][key]}</div>
-            <div class="service-thumbnail" data-src="/img/${imagesData[key]}"></div>
+            <div class="service-thumbnail" data-src="detest/img/${imagesData[key]}"></div>
             <div class="service-description">${prDscData[currentLang][key]}</div>
             <button class="service-read-more ${key}">Zobacz</button>
         `;
@@ -303,7 +303,7 @@ if (ContactUs) {
 }
 
 async function setLanguage(lang) {
-    const translations = await fetch(`/languages/${lang}.json`).then(res => res.json());
+    const translations = await fetch(`detest/languages/${lang}.json`).then(res => res.json());
 
     document.querySelectorAll('[data-i18n]').forEach(el => {
         if (el.dataset.i18n !== 'mainTitle') {
@@ -592,7 +592,7 @@ function CreatePriceList(fclass, name, thumbnail, LOR) {
     let rightSide = document.querySelector(".right-side");
 
     const html = `<div class="pexm ${fclass} fh">
-                    <div class="pexm-thumbnail" style="background-image: url(/img/${thumbnail});"></div>
+                    <div class="pexm-thumbnail" style="background-image: url(detest/img/${thumbnail});"></div>
                     <div class="pexm-footer">
                         <div class="pexm-name">${name}</div>
                     </div>

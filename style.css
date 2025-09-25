@@ -662,8 +662,7 @@ button.a-make:hover {
     border-radius: 1vw;
 }
 
-.back-to-main, .back-to-main i,
-.back-to-main2, .back-to-main2 i{
+.back-to-main, .back-to-main i {
     color: #ffd613;
     font-size: 1.2vw;
     text-shadow: 0 0 1vw #ffd613;
@@ -674,6 +673,29 @@ button.a-make:hover {
     transition: transform 1s;
     z-index: 15;
 }
+
+.back-to-main2, .back-to-main2 i,
+.osback, .osback i{
+    color: #ffd613;
+    font-size: 1.2vw;
+    text-shadow: 0 0 1vw #ffd613;
+    cursor: pointer;
+    transition: transform 1s;
+    z-index: 15;
+}
+
+.prices-options {
+    width: 2.9vw;
+    height: 1.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5vw;
+    position: absolute;
+    left: 5vw;
+    top: 2.5vw;
+}
+
 
 .service-name {
     color: #ffd613;

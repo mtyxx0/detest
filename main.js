@@ -303,7 +303,7 @@ if (ContactUs) {
 }
 
 async function setLanguage(lang) {
-    const translations = await fetch(`./languages/${lang}.json`).then(res => res.json());
+    const translations = await fetch(`/detest/languages/${lang}.json`).then(res => res.json());
 
     document.querySelectorAll('[data-i18n]').forEach(el => {
         if (el.dataset.i18n !== 'mainTitle') {

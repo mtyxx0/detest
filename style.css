@@ -983,13 +983,13 @@ button.service-details-back:hover {
 }
 
 .russian {
-    background-image: url("detest/img/russian.png");
+    background-image: url("img/russian.png");
     background-size: cover;
     background-position: center;
 }
 
 .ukrainian {
-    background-image: url("detest/img/ukrainian.png");
+    background-image: url("img/ukrainian.png");
     background-size: cover;
     background-position: center;
 }

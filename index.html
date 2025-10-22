@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detailing</title>
+    <title>Pierog Detailing - Strona główna</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v7.0.0/css/pro.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="shortcut icon" href="icon.jpg" type="image/x-icon">
 </head>
 <body>
     <div class="in">
@@ -39,23 +40,24 @@
                         </div>
         
                         <div class="price-list-wrapper">
-                            <button class="price-list">Zobacz cennik</button>
+                            <button class="price-list"><span data-i18n="priceListTitle"></span></button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="scroll-up"><i class="fas fa-arrow-up"></i></div>
+        <!-- <div class="scroll-up"><i class="fas fa-arrow-up"></i></div> -->
 
         <div class="box main-hidden"></div>
     
         <div class="main-page">
             <div class="menu main-hidden">
-                <div class="menu-button home"><i class="fal fa-house"></i></div>
-                <div class="menu-button services"><i class="fal fa-diamond"></i></div>
-                <div class="menu-button about"><i class="fal fa-circle-info"></i></div>
-                <div class="menu-button contact"><i class="fal fa-phone"></i></div>
+                <div class="menu-button home" title="Strona główna"><i class="fal fa-house"></i></div>
+                <div class="menu-button services" title="Usługi"><i class="fal fa-diamond"></i></div>
+                <div class="menu-button about" title="O nas"><i class="fal fa-circle-info"></i></div>
+                <div class="menu-button blog-scroll" title="Blog"><i class="fal fa-newspaper"></i></div>
+                <div class="menu-button contact" title="Kontakt"><i class="fal fa-phone"></i></div>
             </div>
     
             <div class="languages main-hidden">
@@ -134,8 +136,10 @@
             <div class="services-few">
                 <span data-i18n="fewServicesInfo" class="few-services-info hidden transitionable"></span>
     
-                <button class="more-services hidden" data-i18n="seeMoreServices"></button>
-                <button class="a-make hidden" data-i18n="makeAppointment"></button>
+                <div class="sf-buttons">
+                    <button class="more-services hidden" data-i18n="seeMoreServices"></button>
+                    <button class="a-make hidden" data-i18n="makeAppointment"></button>
+                </div>
             </div>
         </div>
     
@@ -159,71 +163,17 @@
 
         <div class="blog-page">
             <div class="box-5"></div>
-            <div class="blog-title">blog</div>
+            <div class="blog-title" data-i18n="blogTitle"></div>
 
-            <button class="open-all-blog">Zobacz wszystkie wpisy</button>
+            <button class="open-all-blog"><span data-i18n="openAllBlog"></span></button>
 
-            <div class="blog-subtitle">Najnowsze wpisy</div>
+            <div class="blog-subtitle" data-i18n="blogSubtitle"></div>
 
             <div class="three-sample">
-                <div class="newest">
-                    <div class="sample-thumbnail"></div>
-                    
-                    <div class="date">Sobota, 1 St. 2025</div>
-                
-                    <div class="title-wrapper">
-                        <div class="blog-sample-title">Bill Walsh leadership lessons</div>
-
-                        <button class="open-blog"><i class="fal fa-arrow-up-right"></i></button>
-                    </div>
-
-                    <div class="blog-description">Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?</div>
-
-                    <div class="blog-filters">
-                        <div class="blog-filter">Leadership</div>
-                        <div class="blog-filter">Managment</div>
-                        <div class="blog-filter">Presentation</div>
-                    </div>
-                </div>
-    
-                <div class="newer">
-                    <div class="sample-thumbnail"></div>
-                    
-                    <div class="date">Sobota, 1 St. 2025</div>
-                
-                    <div class="title-wrapper">
-                        <div class="blog-sample-title">Bill Walsh leadership lessons</div>
-
-                        <button class="open-blog"><i class="fal fa-arrow-up-right"></i></button>
-                    </div>
-
-                    <div class="blog-description">Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?</div>
-
-                    <div class="blog-filters">
-                        <div class="blog-filter">Leadership</div>
-                        <div class="blog-filter">Managment</div>
-                        <div class="blog-filter">Presentation</div>
-                    </div>
-                </div>
-    
-                <div class="new">
-                    <div class="sample-thumbnail"></div>
-                    
-                    <div class="date">Sobota, 1 St. 2025</div>
-                
-                    <div class="title-wrapper">
-                        <div class="blog-sample-title">Bill Walsh leadership lessons</div>
-
-                        <button class="open-blog"><i class="fal fa-arrow-up-right"></i></button>
-                    </div>
-
-                    <div class="blog-description">Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?</div>
-
-                    <div class="blog-filters">
-                        <div class="blog-filter">Leadership</div>
-                        <div class="blog-filter">Managment</div>
-                        <div class="blog-filter">Presentation</div>
-                    </div>
+                <div class="empty">
+                    <div class="empty-image"></div>
+                    <div class="empty-text">Brak wpisów</div>
+                    <div class="empty-description" data-i18n="bEmpty"></div>
                 </div>
             </div>
         </div>
@@ -245,7 +195,7 @@
                 </div>
     
                 <div class="pin info hidden transitionable" title="Kliknij">
-                    <i class="fat fa-location-dot"></i> Sprawdź lokalizację naszych salonów
+                    <i class="fat fa-location-dot"></i> <span class="pin-info-title" data-i18n="check-locations"></span>
                 </div>
             </div>
 
@@ -259,7 +209,7 @@
     
                 <input type="submit" class="send hidden transitionable" value="Prześlij">
                 <div class="characters hidden transitionable">0/1000</div>
-            </div>
+            </form>
         </div>
     
         <div class="footer">
@@ -275,6 +225,33 @@
     </div>
     
     <script async src="//www.instagram.com/embed.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="main.js" type="module"></script>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            emailjs.init("5i-8koClXzrxQ2s9t");
+
+            document.querySelector(".contact-container").addEventListener('submit', function(event){
+                event.preventDefault(); 
+
+                const name = document.querySelector('.name').value;
+                const email = document.querySelector('.email').value;
+                const phone = document.querySelector('.phone-number').value;
+                const message = document.querySelector('.message-content').value;
+
+                const templateParams = { name, email, phone, message };
+
+                emailjs.send('service_r4x3cbr', 'template_0g4ocqi', templateParams)
+                    .then(function(response){
+                        console.log('Wiadomość wysłana!', response.status, response.text);
+                        alert('Dziękujemy! Twoja wiadomość została wysłana.');
+                    }, function(error) {
+                        console.error('Błąd przy wysyłaniu...', error);
+                        alert('Ups! Coś poszło nie tak. Spróbuj ponownie.');
+                    });
+            });
+        };
+    </script>
 </body>
 </html>

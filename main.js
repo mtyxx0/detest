@@ -8,6 +8,8 @@ let languages = {
     "es": document.querySelector(".spanish")
 }
 
+const blogFiles = ["blog1.json", "blog2.json"];
+
 let HCharacters = document.querySelector(".characters");
 let HCMessage = document.querySelector(".message-content");
 
@@ -16,7 +18,6 @@ const IGL = document.getElementById("IGL");
 const FBL2 = document.getElementById("FBL2");
 const IGL2 = document.getElementById("IGL2");
 
-let BackToTop = document.querySelector(".scroll-up");
 let ShowAllServices = document.querySelector(".more-services");
 let BTMain = document.querySelector(".home2");
 let MMServices = document.querySelector(".main-more-services");
@@ -42,6 +43,7 @@ let Scroll = {
     "home": document.querySelector(".home"),
     "services": document.querySelector(".services"),
     "about": document.querySelector(".about"),
+    "blog": document.querySelector(".blog-scroll"),
     "contact": document.querySelector(".contact"),
 }
 
@@ -49,6 +51,7 @@ let ScrollValue = {
     "home": document.querySelector(".main-page"),
     "services": document.querySelector(".services-page"),
     "about": document.querySelector(".about-page"),
+    "blog": document.querySelector(".blog-page"),
     "contact": document.querySelector(".contact-page"),
 }
 
@@ -106,12 +109,13 @@ let prices = document.querySelector(".price-list");
 document.addEventListener("DOMContentLoaded", async () => {
     const allServicesList = document.querySelector(".all-services-list");
 
-    const [servicesData, imagesData, prDscData, descsData, linksData] = await Promise.all([
+    const [servicesData, imagesData, prDscData, descsData, linksData, translationsData] = await Promise.all([
         fetch('./translations/services.json').then(r => r.json()),
         fetch('./img.json').then(r => r.json()),
         fetch('./translations/s_pr_dsc.json').then(r => r.json()),
         fetch('./translations/descriptions.json').then(r => r.json()),
-        fetch('./links.json').then(r => r.json())
+        fetch('./links.json').then(r => r.json()),
+        fetch(`./languages/${currentLang}.json`).then(r => r.json())
     ]);
 
     const Services = {};
@@ -123,9 +127,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         div.innerHTML = `
             <div class="service-title">${servicesData[currentLang][key]}</div>
-            <div class="service-thumbnail" data-src="./img/${imagesData[key]}"></div>
+            <div class="service-thumbnail" data-src="/img/${imagesData[key]}"></div>
             <div class="service-description">${prDscData[currentLang][key]}</div>
-            <button class="service-read-more ${key}">Zobacz</button>
+            <button class="service-read-more ${key}">${translationsData["service-new-read"]}</button>
         `;
 
         const titleElement = div.querySelector(".service-title");
@@ -246,23 +250,6 @@ for (let key in Scroll) {
     }
 }
 
-window.addEventListener("scroll", ()=>{
-    if (window.scrollY >= 345) {
-        BackToTop.style.right = '0';
-    } else {
-        BackToTop.style.right = '-3vw';
-    }
-})
-
-if (BackToTop) {
-    BackToTop.addEventListener("click", ()=>{
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        })
-    })
-}
-
 let int;
 
 if (ShowAllServices) {
@@ -298,12 +285,14 @@ if (MMServices) {
 if (ContactUs) {
     const target = document.querySelector(".contact-page");
     if (target) {
-        target.scrollIntoView({ behavior: "smooth" })
+        ContactUs.addEventListener("click", ()=>{
+            target.scrollIntoView({ behavior: "smooth" })
+        })
     }
 }
 
 async function setLanguage(lang) {
-    const translations = await fetch(`/detest/languages/${lang}.json`).then(res => res.json());
+    const translations = await fetch(`/languages/${lang}.json`).then(res => res.json());
 
     document.querySelectorAll('[data-i18n]').forEach(el => {
         if (el.dataset.i18n !== 'mainTitle') {
@@ -311,6 +300,11 @@ async function setLanguage(lang) {
             if (translations[key]) el.textContent = translations[key];
         }
     });
+
+    const updateText = (el) => {
+        const key = el.dataset.i18n;
+        if (translations[key]) el.textContent = translations[key];
+    }
 
     const mainDiv = document.querySelector('[data-i18n="mainTitle"]');
     if (mainDiv) {
@@ -326,6 +320,19 @@ async function setLanguage(lang) {
         spanEnd.className = 'end';
         spanEnd.textContent = translations.mainTitleEnd;
         mainDiv.appendChild(spanEnd);
+    }
+
+    const isMobile = window.innerHeight < 786;
+    const blog = document.querySelector('[data-i18n="blogSubtitle"]');
+    const blog2 = document.querySelector('[data-i18n="bLatestTitle"]');
+    if (blog && isMobile) {
+        blog.setAttribute('data-i18n', 'bLatestTitle2');
+        updateText(blog);
+    }
+
+    if (blog2 && isMobile) {
+        blog2.setAttribute('data-i18n', 'bLatestTitle2');
+        updateText(blog2);
     }
 
     if (translations.placeholders) {
@@ -592,7 +599,7 @@ function CreatePriceList(fclass, name, thumbnail, LOR) {
     let rightSide = document.querySelector(".right-side");
 
     const html = `<div class="pexm ${fclass} fh">
-                    <div class="pexm-thumbnail" style="background-image: url(./img/${thumbnail});"></div>
+                    <div class="pexm-thumbnail" style="background-image: url(/img/${thumbnail});"></div>
                     <div class="pexm-footer">
                         <div class="pexm-name">${name}</div>
                     </div>
@@ -620,6 +627,7 @@ let PLThumbnails = {
 }
 
 let PriceListBack = document.querySelector(".back-to-main2");
+let PriceListBack2 = document.querySelector(".back-to-main2-2");
 
 function UMC(selname, seldesc1, seldesc2) {
     let selectedName = document.querySelector(".selected-name");
@@ -678,6 +686,12 @@ Promise.all([
 
 if (PriceListBack) {
     PriceListBack.addEventListener("click", ()=>{
+        window.location.href = "index.html"
+    })
+}
+
+if (PriceListBack2) {
+    PriceListBack2.addEventListener("click", ()=>{
         window.location.href = "index.html"
     })
 }
@@ -761,40 +775,45 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 let info = document.querySelector(".info-box-wrapper")
 let iContent = document.querySelector(".info");
-let iTimer = document.querySelector(".timer")
 let functionCalled = false;
 
 let nameInfo = document.querySelector(".name-info")
 let infoContainer = document.querySelector(".info-container")
 
-function ShowInfo(infoContent, seconds) {
-    if (info && iContent && iTimer) {
-        iTimer.textContent = `${seconds}s`
+let visitContainer = document.querySelector(".visit-page.main-page")
 
-        info.style.transform = "translate(-50%, -50%) scale(1)";
-        info.style.opacity = "1";
+function ShowInfo(infoContent, ats) {
+    if (info && iContent && visitContainer) {
+        if (ats !== "ATT") {
+            functionCalled = true;
         
-        iContent.textContent = infoContent;
+            visitContainer.scrollTo({ top: 0, behavior: "smooth"})
     
-        let time = seconds;
-            
-        let interval = setInterval(() => {
-            if (time > 0) {
-                time--;
-            }
-                
-            if (time === 0) {
-                clearInterval(interval);
-                functionCalled = false;
-
-                setTimeout(() => {
-                    info.style.transform = "translate(-50%, -50%) scale(0)";
+            visitContainer.style.overflow = "hidden";
+    
+            info.style.display = "flex";
+            setTimeout(() => {
+                info.style.opacity = "1";
+            }, 0);
+    
+            window.addEventListener("keydown", (event)=>{
+                if (event.code === "Space") {
+                    event.preventDefault();
+    
                     info.style.opacity = "0";
-                }, 500);
-            }
-    
-            iTimer.textContent = `${time}s`;
-        }, 1000);
+                    setTimeout(() => {
+                        info.style.display = "none";
+                        functionCalled = false;
+                        visitContainer.style.overflowX = "hidden";
+                        visitContainer.style.overflowY = "auto";
+                    }, 1000);
+                }
+            })
+            
+            iContent.textContent = infoContent;
+        } else {
+            iContent.textContent = infoContent;
+        }
     }
 }
 
@@ -807,15 +826,7 @@ function isValidName(name) {
 }
 
 function isValidPhone(phone) {
-    const regex = /^\+([1-9][0-9]{0,2})\s/;
-    const match = phone.match(regex);
-
-    if (match) {
-        const code = parseInt(match[1], 10);
-        return code >= 1 && code <= 994;
-    }
-
-    return false;
+    return /^\d+$/.test(phone);
 }
 
 function isValidEmail(email) {
@@ -854,6 +865,68 @@ function fadeIn(element, display = "flex", duration = 500) {
     return new Promise(resolve => setTimeout(resolve, duration));
 }
 
+let error = {
+    "pl": {
+        "001": "Wypełnij wszystkie pola!",
+        "002": "Podaj poprawne imię!",
+        "003": "Podaj poprawny numer telefonu!",
+        "004": "Podaj poprawny adres e-mail!",
+        "005": "Godzina musi być w przedziale 8:00–22:00",
+        "006": "Wybierz rodzaj pojazdu!",
+        "007": "Wybierz usługę!",
+        "008": "Zaznacz preferowaną formę kontaktu!",
+        "009": "Podaj brakujące informacje!",
+    },
+
+    "en": {
+        "001": "Fill in all fields!",
+        "002": "Enter a valid first name!",
+        "003": "Enter a valid phone number!",
+        "004": "Enter a valid email address!",
+        "005": "The time must be between 8AM and 10PM",
+        "006": "Select the type of vehicle!",
+        "007": "Select a service!",
+        "008": "Select your preffered method of contact!",
+        "009": "Provide the missing information!"
+    },
+    
+    "ru": {
+        "001": "Заполните все поля!",
+        "002": "Введите правильное имя!",
+        "003": "Введите правильный номер телефона!",
+        "004": "Введите правильный адрес электронной почты!",
+        "005": "Время должно быть с 8:00 до 22:00",
+        "006": "Выберите тип транспортного средства!",
+        "007": "Выберите услугу!",
+        "008": "Выберите предпочитаемый способ связи!",
+        "009": "Укажите недостающую информацию!"
+    },
+
+    "es": {
+        "001": "¡Rellena todos los campos!",
+        "002": "¡Introduce un nombre válido!",
+        "003": "¡Introduce un número de teléfono válido!",
+        "004": "¡Introduce una dirección de correo electrónico válida!",
+        "005": "La hora debe estar entre las 8:00 y las 22:00",
+        "006": "¡Selecciona el tipo de vehículo!",
+        "007": "¡Selecciona un servicio!",
+        "008": "¡Selecciona tu método de contacto preferido!",
+        "009": "¡Proporciona la información que falta!"
+    },
+
+    "uk": {
+        "001": "Заповніть усі поля!",
+        "002": "Введіть правильне ім'я!",
+        "003": "Введіть правильний номер телефону!",
+        "004": "Введіть правильну електронну адресу!",
+        "005": "Час повинен бути між 8:00 та 22:00",
+        "006": "Виберіть тип транспортного засобу!",
+        "007": "Виберіть послугу!",
+        "008": "Виберіть бажаний спосіб зв'язку!",
+        "009": "Надайте відсутню інформацію!"
+    }
+}
+
 if (next) {
     next.addEventListener("click", ()=>{
         let hasError = false;
@@ -871,30 +944,31 @@ if (next) {
         }
     
         if (hasError && !functionCalled) {
-            ShowInfo("Wypełnij wszystkie pola!", 10);
+            ShowInfo(error[currentLang]["001"], 3);
             functionCalled = true;
             
             return;
         }
     
         if (!isValidName(inputs["name"].value) && !functionCalled) {
-            ShowInfo("Podaj poprawne imię!", 10)
+            ShowInfo(error[currentLang]["002"], 3)
             functionCalled = true;
             
             return;
         }
-    
+        
         if (!isValidPhone(inputs["phone"].value) && !functionCalled) {
-            ShowInfo("Podaj poprawny numer telefonu! (np.: +48 123456789)", 10)
+            ShowInfo(error[currentLang]["003"], 3)
             
             return;
         }
-    
+
         if (!isValidEmail(inputs["email"].value) && !functionCalled) {
-            ShowInfo("Podaj poprawny adres e-mail! (np. jan.kowalski@gmail.com)", 10)
+            ShowInfo(error[currentLang]["004"], 3)
             
             return;
         }
+
         fadeOut(AppFirst).then(() => fadeIn(AppSecond));
         document.querySelector(".second-stage").classList.add("current");
     })
@@ -903,7 +977,7 @@ if (next) {
 let selected = document.querySelector(".selected");
 let selected2 = document.querySelector(".selected2");
 let list = document.querySelector(".list");
-let list2 = document.querySelector(".list2")
+let list2 = document.querySelector(".list")
 let addService = document.querySelector(".add-service");
 
 let visitServices;
@@ -911,37 +985,51 @@ let clicked;
 
 let added = [];
 
-function setupDropdown(selected, list) {
+function setupDropdown(selected, listw) {
     let isAnimating = false;
     let isOpen = false;
+
+    const handleKeydown = (event) => {
+        if (event.code === "Space") {
+            event.preventDefault();
+            hideList();
+            visitContainer.style.overflowX = "hidden";
+            visitContainer.style.overflowY = "auto";
+        }
+    };
 
     const showList = () => {
         if (isAnimating || isOpen) return;
         isAnimating = true;
-        list.style.display = "flex";
+        isOpen = true;
 
+        listw.style.display = "flex";
         requestAnimationFrame(() => {
-            list.style.opacity = "1";
-            list.style.transform = "translate(0%, 0%) translateY(0vw)";
+            listw.style.opacity = "1";
         });
 
-        setTimeout(() => {
+        listw.addEventListener("transitionend", function onTransitionEnd() {
             isAnimating = false;
-            isOpen = true;
-        }, 500);
+            listw.removeEventListener("transitionend", onTransitionEnd);
+        });
+
+        window.addEventListener("keydown", handleKeydown);
     };
 
     const hideList = () => {
         if (isAnimating || !isOpen) return;
         isAnimating = true;
-        list.style.opacity = "0";
-        list.style.transform = "translate(0%, 0%) translateY(2vw)";
 
-        setTimeout(() => {
-            list.style.display = "none";
+        listw.style.opacity = "0";
+
+        listw.addEventListener("transitionend", function onTransitionEnd() {
+            listw.style.display = "none";
             isAnimating = false;
             isOpen = false;
-        }, 500);
+            listw.removeEventListener("transitionend", onTransitionEnd);
+        });
+
+        window.removeEventListener("keydown", handleKeydown);
     };
 
     selected.addEventListener("click", (e) => {
@@ -954,8 +1042,10 @@ function setupDropdown(selected, list) {
     });
 
     document.addEventListener("click", (e) => {
-        if (!selected.contains(e.target) && !list.contains(e.target)) {
+        if (isOpen && !selected.contains(e.target) && !listw.contains(e.target)) {
             hideList();
+            visitContainer.style.overflowX = "hidden";
+            visitContainer.style.overflowY = "auto";
         }
     });
 }
@@ -963,113 +1053,106 @@ function setupDropdown(selected, list) {
 if (selected && list) setupDropdown(selected, list);
 if (selected2 && list2) setupDropdown(selected2, list2);
 
-function VPSCreate(fclass, name, fos) {
-    if (fos && fos === list) {
-        const html = `<div class="element ${fclass}"> ${name}</div>`
-        fos.insertAdjacentHTML("beforeend", html);
-    } else if (fos) {
-        const html = `<div class="element e2 ${fclass}"> ${name}</div>`
-        fos.insertAdjacentHTML("beforeend", html);
-    }
-}
+let FOSChild = document.querySelector(".sr-list");
+let as = document.querySelector(".added-services");
+let selectedVehicle = "";
 
-let as = document.querySelector(".added-services")
+// --- FUNKCJE ---
+
+function VPSCreate(fclass, name, fos) {
+    const html = `<div class="element ${fclass}">${name}</div>`;
+    fos.insertAdjacentHTML("beforeend", html);
+}
 
 function addToList(what, translated, ac) {
     if (ac === 1) {
-        if (as.querySelector(`.added.${what}`)) {
-            return;
-        }
-        
-        const html = `<div title="Kliknij aby usunąć" class="added ${what}">${translated}</div>`
-        
+        if (as.querySelector(`.added.${what}`)) return;
+
+        let ttitle = currentLang === "pl" ? "Kliknij aby usunąć" : "Click to remove";
+        const html = `<div title="${ttitle}" class="added ${what}">${translated}</div>`;
         as.insertAdjacentHTML("beforeend", html);
     } else if (ac === 0) {
         const el = as.querySelector(`.added.${what}`);
-        if (el) {
-            el.remove();
-        }
+        if (el) el.remove();
     }
 }
 
-fetch('./translations/services.json').then(r=>r.json()).then(data => {
-    visitServices = data;
-
-    for (const key in visitServices["pl"]) {
-        VPSCreate(key, visitServices[currentLang][key], list);
-    }
+if (selected) {
+    selected.addEventListener("click", () => {
+        visitContainer.scrollTo({ top: 0, behavior: "smooth"})
+        visitContainer.style.overflow = "hidden";
     
-    let created = document.querySelectorAll(`.element`);
-
-    created.forEach((el)=>{
-        let searched = el.classList[1];
-
-        el.addEventListener("click", ()=>{
-            let text = visitServices[currentLang][searched]
-            let maxLength = 23;
-            if (text.length > maxLength) {
-                text = text.slice(0, maxLength - 3) + "...";
-            }
-            selected.textContent = text;
-            
-            clicked = searched;
-
-            list.style.opacity = "0";
-            list.style.transform = "translate(0%, 0%) translateY(2vw)";
-
-            setTimeout(() => {
-                list.style.display = "none";
-            }, 500);
-        })
-    })
-
-    if (addService) {
-        addService.addEventListener("click", ()=>{
-            if (clicked !== "" && clicked !== undefined) {
-                if (!added.includes(clicked)) {
-                    added.push(clicked);
+        FOSChild.innerHTML = "";
+        fetch('./translations/services.json')
+            .then(r => r.json())
+            .then(data => {
+                visitServices = data;
     
-                    added.forEach((el)=>{
-                        addToList(el, visitServices[currentLang][el], 1);
-                    })
-                    
-                    let addedServices = document.querySelectorAll(`.added`);
-                    
-                    addedServices.forEach((el)=>{
-                        el.addEventListener("click", ()=>{
-                            let c = el.classList[1];
-    
-                            const index = added.indexOf(c);
-                            if (index !== -1) {
-                                added.splice(index, 1);
-                            }
-    
-                            addToList(c, visitServices[currentLang][el], 0);
-                        })
-                    })
+                for (const key in visitServices["pl"]) {
+                    VPSCreate(key, visitServices[currentLang][key], FOSChild); // <-- tutaj wstawiamy do list
                 }
-            }
-        })
-    }
-})
+    
+                list.querySelectorAll(`.element`).forEach(el => {
+                    let searched = el.classList[1];
+                    el.addEventListener("click", () => {
+                        let text = visitServices[currentLang][searched];
+                        if (text.length > 23) text = text.slice(0, 20) + "...";
+                        selected.textContent = text;
+                        clicked = searched;
+                        
+                        selected.click();
+                    });
+                });
+            });
+    });
+}
 
-let v;
+if (selected2) {
+    selected2.addEventListener("click", () => {
+        visitContainer.scrollTo({ top: 0, behavior: "smooth"})
+        visitContainer.style.overflow = "hidden";
+    
+        FOSChild.innerHTML = "";
+        fetch('./translations/vehicles-translated.json')
+            .then(r => r.json())
+            .then(data => {
+                v = data;
+    
+                for (const key in v["pl"]) {
+                    VPSCreate(`e2 ${key}`, v[currentLang][key], FOSChild);
+                }
+    
+                FOSChild.querySelectorAll(".element.e2").forEach(e => {
+                    e.addEventListener("click", () => {
+                        selected2.textContent = v[currentLang][e.classList[2]];
+                        selectedVehicle = v[currentLang][e.classList[2]];
+                        
+                        selected2.click();
+                    });
+                });
+            });
+    });
+}
 
-fetch('./translations/vehicles-translated.json').then(r=>r.json()).then(data => {
-    v = data;
+if (addService) {
+    addService.addEventListener("click", () => {
+        if (clicked && !added.includes(clicked)) {
+            added.push(clicked);
+            added.forEach(el => {
+                addToList(el, visitServices[currentLang][el], 1);
+            });
 
-    for (const key in v["pl"]) {
-        VPSCreate(key, v[currentLang][key], list2)
-    }
-
-    let l2b = document.querySelectorAll(".element.e2");
-
-    l2b.forEach((e)=>{
-        e.addEventListener("click", ()=>{
-            selected2.textContent = v[currentLang][e.classList[2]];
-        })
-    })
-})
+            document.querySelectorAll(`.added`).forEach(el => {
+                el.addEventListener("click", () => {
+                    let c = el.classList[1];
+                    const index = added.indexOf(c);
+                    if (index !== -1) added.splice(index, 1);
+                    addToList(c, visitServices[currentLang][c], 0);
+                });
+            });
+        }
+    });
+}
 
 let next2 = document.querySelector(".next2");
 let makeAppointment = document.querySelector(".make-appointment");
@@ -1103,11 +1186,6 @@ function isValidTime(time) {
     return hours > 8 && hours < 22
 }
 
-function isVehicleChecked() {
-    let isChecked = (selected2.textContent === dft[currentLang]);
-    return !isChecked;
-}
-
 function NoServicesAdded() {
     let isAdded = (as.innerHTML === "");
     return isAdded;
@@ -1125,10 +1203,18 @@ function isRadioChecked() {
 }
 
 function addNew(name, sur, id) {
-    let formula = `${name}${id}`;
+    let formula = `${name} ${sur} - ${id}`;
 
     if (!addedPersons.includes(formula)) {
-        const html = `<div title="Kliknij aby usunąć" class="new-person" data-formula="${formula}">${name} ${sur}, ${id}</div>`
+        let ttitle = ""
+
+        if (currentLang === "pl") {
+            ttitle = "Kliknij aby usunąć"
+        } else if (currentLang === "en") {
+            ttitle = "Click to remove"
+        }
+
+        const html = `<div title="${ttitle}" class="new-person" data-formula="${formula}">${name} ${sur}, ${id}</div>`
         newPersonList.insertAdjacentHTML("beforeend", html);
                 
         const newElement = newPersonList.querySelector(`.new-person[data-formula="${formula}"]`);
@@ -1161,25 +1247,26 @@ if(next2) {
                 hasError = true;
             }
         }
-    
+
         if (hasError && !functionCalled) {
-            ShowInfo("Wypełnij wszystkie pola!", 10);
+            ShowInfo(error[currentLang]["001"], 3);
             functionCalled = true;
             return;
         }
 
         if (!isValidTime(inputs2["time"]) && !functionCalled) {
-            ShowInfo("Godzina musi być w przedziale 8:00–22:00", 10)
+            ShowInfo(error[currentLang]["005"], 3)
             return;
         }
 
-        if (!isVehicleChecked()) {
-            ShowInfo("Wybierz rodzaj pojazdu!", 10);
+        if (selectedVehicle === "") {
+            ShowInfo(error[currentLang]["006"], 3);
             return;
         }
+        console.log(selectedVehicle)
 
         if (NoServicesAdded()) {
-            ShowInfo("Wybierz usługę!", 10);
+            ShowInfo(error[currentLang]["007"], 3);
             return;
         }
 
@@ -1191,7 +1278,7 @@ if(next2) {
 if (makeAppointment) {
     makeAppointment.addEventListener("click", ()=>{
         if (!isRadioChecked()) {
-            ShowInfo("Zaznacz preferowaną formę kontaktu!", 10)
+            ShowInfo(error[currentLang]["008"], 3)
         }
     })
 }
@@ -1200,8 +1287,12 @@ if (addPerson){
     addPerson.addEventListener("click", ()=>{
         for (const key in inputs3) {
             if (inputs3[key].value === "") {
-                ShowInfo("Podaj brakujące informacje!", 10)
+                ShowInfo(error[currentLang]["009"], 3)
             }
+        }
+
+        if (inputs3["newName"].value.length < 3) {
+            ShowInfo(error[currentLang]["002"], 3)
         }
 
         if (inputs3["newID"].value.length === 4) {
@@ -1223,7 +1314,7 @@ if (AMake) {
 let date = new Date();
 let year = date.getFullYear();
 
-let footer = `&copy; ${year} COMPANY. Wszelkie prawa zastrzeżone`;
+let footer = `&copy; ${year} Pierog Detailing. <span class="copyright-text" data-i18n="copyright"></span>`;
 let footerContent = document.querySelector(".footer-content");
 
 if (footerContent) {
@@ -1236,4 +1327,502 @@ if(OpenAll) {
     OpenAll.addEventListener("click", ()=>{
         window.location.href = "blog.html";
     })
+}
+            
+let latest = document.querySelector(".latest-nothing")
+
+async function loadBlogEntries() {
+    const allListContainer = document.querySelector('.all-list');
+    if (!allListContainer) return;
+
+    try {
+
+        if (blogFiles.length > 0) {
+            latest.style.display = "none";
+        }
+
+        for (const file of blogFiles) {
+            const res = await fetch(`/blogs/${file}`);
+            if (!res.ok) continue;
+            const blogData = await res.json();
+
+            const entry = document.createElement('div');
+            entry.classList.add('main-entry');
+            
+            const thumb = document.createElement('div');
+            thumb.classList.add('main-entry-thumbnail');
+            if (blogData.mainPhoto) {
+                thumb.style.backgroundImage = `url(/blogs-thumbnails/${blogData.mainPhoto})`;
+                thumb.style.backgroundSize = 'cover';
+                thumb.style.backgroundPosition = 'center';
+            }
+
+            const titleWrapper = document.createElement('div');
+            titleWrapper.classList.add('main-entry-title-wrapper');
+
+            const descWrapper = document.createElement("div");
+            descWrapper.classList.add("main-entry-blog-description");
+            descWrapper.textContent = blogData.blogDesc || "Brak opisu";
+
+            const title = document.createElement('div');
+            title.classList.add('blog-main-entry-title');
+            title.textContent = blogData.blogName || 'Brak tytułu';
+
+            const openBtn = document.createElement('button');
+            openBtn.classList.add('main-entry-open-blog');
+            openBtn.innerHTML = '<i class="fal fa-arrow-up-right"></i>';
+
+            openBtn.addEventListener("click", ()=>{
+                const content = Array.isArray(blogData.content) ? blogData.content : [];
+                sessionStorage.setItem('selectedBlogContent', JSON.stringify(content));   
+                sessionStorage.setItem("image", JSON.stringify(blogData.mainPhoto));   
+                sessionStorage.setItem("fltrs", JSON.stringify(blogData.allFilters));          
+                window.location.href = "/entry.html"
+            })
+
+            const date = document.createElement("div");
+            date.classList.add("main-entry-date");
+            date.textContent = blogData.date || "Nieznana data";
+
+            const filtersWrapper = document.createElement("div");
+            filtersWrapper.classList.add("main-entry-blog-filters");
+        
+
+            titleWrapper.appendChild(title);
+            titleWrapper.appendChild(openBtn);
+
+            entry.appendChild(thumb);
+            entry.appendChild(date);
+            entry.appendChild(titleWrapper);
+            entry.appendChild(descWrapper);
+
+            allListContainer.appendChild(entry);
+        }
+    } catch (err) {
+        console.error('Błąd przy wczytywaniu blogów:', err);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', loadBlogEntries);
+
+let filtersTranslations = {
+    "pcar": "Samochody osobowe",
+    "suv": "SUV'y",
+    "motorcycle": "Motocykle",
+    "sports": "Samochody sportowe",
+    "tut": "Poradnik",
+    "review": "Recenzja",
+    "wnd": "Mycie i dekontaminacja",
+    "paintcorrection": "Korekta lakieru",
+    "protection": "Zabezpieczenie",
+    "interior": "Wnętrze",
+    "rimntires": "Felgi i opony",
+    "wnr": "Szyby i reflektory",
+    "beginnerFriendly": "Dla początkujących",
+    "intermediate": "Średniozaawansowany detailing",
+    "advanced": "Profesjonalny detailing",
+    "summer": "Pielęgnacja letnia",
+    "winter": "Pielęgnacja zimowa"
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    const addHere = document.querySelector(".add-here");
+    if (!addHere) return;
+
+    const blogRaw = sessionStorage.getItem("selectedBlogContent");
+    if (!blogRaw) return;
+
+    const blogImage = sessionStorage.getItem("image");
+    if (!blogImage) return;
+
+    let blog;
+    try {
+        blog = JSON.parse(blogRaw);
+    } catch (err) {
+        console.error("Błąd przy parsowaniu zawartości bloga:", err);
+        return;
+    }
+
+    const filters = document.createElement("div");
+    const rawFilters = sessionStorage.getItem("fltrs");
+    const fixedRawFilters = JSON.parse(rawFilters);
+
+    filters.classList.add("filters-list");
+    
+    fixedRawFilters.forEach((e)=>{
+        const fwrap = document.createElement("div");
+        fwrap.classList.add("fwrap");
+        fwrap.textContent = filtersTranslations[e];
+        filters.appendChild(fwrap);
+    })
+    
+    addHere.appendChild(filters);
+
+    const img = document.createElement("div");
+    img.classList.add("main-image");
+    img.style.backgroundImage = `url(blogs-thumbnails/${blogImage.replace(/['"]/g, '')})`;
+    addHere.appendChild(img);
+
+    const contentArray = blog;
+    if (!Array.isArray(contentArray)) return;
+
+    contentArray.forEach(item => {
+        if (item.type === "text") {
+            const textDiv = document.createElement("div");
+            textDiv.classList.add("preview-text");
+            textDiv.innerHTML = item.text || "";
+            addHere.appendChild(textDiv);
+        } else if (item.type === "image") {
+            const otherDiv = document.createElement("div");
+            otherDiv.classList.add("othd")
+
+            const top = document.createElement("div");
+            top.classList.add("other-photo-upper");
+            top.textContent = item.topText || "";
+
+            const photo = document.createElement("div");
+            photo.classList.add("other-photo");
+            if (item.src) {
+                photo.style.backgroundImage = `url(/blogs-thumbnails/${item.src})`;
+            }
+
+            const bottom = document.createElement("div");
+            bottom.classList.add("other-photo-under");
+            bottom.textContent = item.bottomText || "";
+
+            otherDiv.appendChild(top);
+            otherDiv.appendChild(photo);
+            otherDiv.appendChild(bottom);
+
+            addHere.appendChild(otherDiv);
+        }
+    });
+});
+
+function parseDate(dateStr) {
+    if (!dateStr) return new Date(0);
+    const [day, month, year] = dateStr.split('.').map(Number);
+    return new Date(2000 + year, month - 1, day);
+}
+
+async function getTop3NewestBlogs() {
+    const blogs = [];
+
+    for (const file of blogFiles) {
+        const res = await fetch(`/blogs/${file}`);
+        if (!res.ok) continue;
+
+        const data = await res.json();
+        blogs.push({
+            file,
+            ...data,
+            parsedDate: parseDate(data.date)
+        });
+    }
+
+    blogs.sort((a, b) => b.parsedDate - a.parsedDate);
+
+    return blogs.slice(0, 3);
+}
+
+async function loadTop3NewestBlogs() {
+    const latestListContainer = document.querySelector('.latest-list');
+    const latestListMainContainer = document.querySelector(".three-sample");
+    if (!latestListContainer && !latestListMainContainer) return;
+
+    try {
+        const top3Blogs = await getTop3NewestBlogs();
+
+        const isMobile = window.innerWidth < 768;
+
+        if ((latestListContainer || latestListMainContainer) && latest && top3Blogs.length > 0) {
+            latest.style.display = "none";
+        }
+
+        const blogsToShow = isMobile ? top3Blogs.slice(0, 1) : top3Blogs;
+
+        for (const blogData of blogsToShow) {
+            const entry = document.createElement('div');
+            entry.classList.add('main-entry');
+            
+            const thumb = document.createElement('div');
+            thumb.classList.add('main-entry-thumbnail');
+            if (blogData.mainPhoto) {
+                thumb.style.backgroundImage = `url(/blogs-thumbnails/${blogData.mainPhoto})`;
+                thumb.style.backgroundSize = 'cover';
+                thumb.style.backgroundPosition = 'center';
+            }
+
+            const titleWrapper = document.createElement('div');
+            titleWrapper.classList.add('main-entry-title-wrapper');
+
+            const descWrapper = document.createElement("div");
+            descWrapper.classList.add("main-entry-blog-description");
+            descWrapper.textContent = blogData.blogDesc || "Brak opisu";
+
+            const title = document.createElement('div');
+            title.classList.add('blog-main-entry-title');
+            title.textContent = blogData.blogName || 'Brak tytułu';
+
+            const openBtn = document.createElement('button');
+            openBtn.classList.add('main-entry-open-blog');
+            openBtn.innerHTML = '<i class="fal fa-arrow-up-right"></i>';
+
+            const date = document.createElement("div");
+            date.classList.add("main-entry-date");
+            date.textContent = blogData.date || "Nieznana data";
+
+            const filtersWrapper = document.createElement("div");
+            filtersWrapper.classList.add("main-entry-blog-filters");
+
+            titleWrapper.appendChild(title);
+            titleWrapper.appendChild(openBtn);
+
+            entry.appendChild(thumb);
+            entry.appendChild(date);
+            entry.appendChild(titleWrapper);
+            entry.appendChild(descWrapper);
+
+            const clone1 = entry.cloneNode(true);
+            const clone2 = entry.cloneNode(true);
+            
+            if (latestListContainer) {
+                latestListContainer.appendChild(clone1);
+                clone1.querySelector('.main-entry-open-blog').addEventListener("click", ()=> {
+                    const content = Array.isArray(blogData.content) ? blogData.content : [];
+                    sessionStorage.setItem('selectedBlogContent', JSON.stringify(content));   
+                    sessionStorage.setItem("image", JSON.stringify(blogData.mainPhoto));   
+                    sessionStorage.setItem("fltrs", JSON.stringify(blogData.allFilters));          
+                    window.location.href = "/entry.html"
+                });
+            }
+            
+            if (latestListMainContainer) {
+                latestListMainContainer.appendChild(clone2);
+                clone2.querySelector('.main-entry-open-blog').addEventListener("click", ()=> {
+                    const content = Array.isArray(blogData.content) ? blogData.content : [];
+                    sessionStorage.setItem('selectedBlogContent', JSON.stringify(content));   
+                    sessionStorage.setItem("image", JSON.stringify(blogData.mainPhoto));   
+                    sessionStorage.setItem("fltrs", JSON.stringify(blogData.allFilters));          
+                    window.location.href = "/entry.html"
+                });
+            }
+            
+        }
+    } catch (err) {
+        console.error('Błąd przy wczytywaniu najnowszych blogów:', err);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', loadTop3NewestBlogs);
+
+let entryBack = document.querySelector(".entry-back");
+let blogBack = document.querySelector(".blog-back");
+
+if (entryBack) {
+    entryBack.addEventListener("click", ()=>{
+        window.location.href = "blog.html"
+    })
+}
+
+if (blogBack) {
+    blogBack.addEventListener("click", ()=>{
+        window.location.href = "index.html"
+    })
+}
+
+let ServicesTranslation = [];
+
+fetch('./translations/services.json').then(res=>res.json()).then(data => {
+    ServicesTranslation = data;
+})
+
+if (window.location.pathname === "/visit.html") { 
+    let toCheck = document.querySelector(".visit-name");
+
+    if (toCheck) {
+        emailjs.init("5i-8koClXzrxQ2s9t");
+
+        document.querySelector(".make-appointment").addEventListener('click', function(event){
+            event.preventDefault();
+            
+            const contactPrefer = document.querySelector('input[name="contact"]:checked');
+            if (!contactPrefer) {
+                allFilted = false;
+                return;
+            }
+            
+            const name = document.querySelector('.visit-name').value;
+            const surname = document.querySelector('.visit-surname').value;
+            const email = document.querySelector('.visit-email').value;
+            const phone = document.querySelector('.visit-phone').value;
+            const date = document.querySelector('.visit-date').value;
+            const time = document.querySelector('.visit-time').value;
+            const plate = document.querySelector('.visit-plate').value;
+            const describing = document.querySelector('.visit-describing').value;
+            const preference = document.querySelector('input[name="contact"]:checked')?.classList.contains('prefer-sms') ? 'sms' : document.querySelector('input[name="contact"]:checked')?.classList.contains('prefer-email') ? 'email' : '';          
+            const services = [];
+            const id = document.querySelector(".visit-new-id").value;
+
+            added.forEach((e)=>{
+                services.push(ServicesTranslation[currentLang][e]);
+            })
+
+            const templateParams = {name, surname, email, phone, date, time, plate, describing, preference, services, selectedVehicle, addedPersons};
+            
+            ShowInfo("Czekaj...", 10);
+
+            emailjs.send('service_r4x3cbr', 'template_8ce20cj', templateParams)
+                .then(function(response){
+                    console.log('Wiadomość wysłana!', response.status, response.text);
+                    ShowInfo('Dziękujemy! Twoja wiadomość została wysłana.', "ATT");
+                }, function(error) {
+                    console.error('Błąd przy wysyłaniu...', error);
+                    ShowInfo('Ups! Coś poszło nie tak. Spróbuj ponownie.', "ATT");
+                });
+        });
+    }
+}
+
+let newTranslations;
+
+let navigationButtons = {
+    "navHomeTitle": document.querySelector(".menu-button.home"),
+    "navServicesTitle": document.querySelector(".menu-button.services"),
+    "navAboutTitle": document.querySelector(".menu-button.about"),
+    "navBlog-scrollTitle": document.querySelector(".menu-button.blog-scroll"),
+    "navContactTitle": document.querySelector(".menu-button.contact")
+}
+
+let npin = document.querySelector(".pin.info");
+let eBack = document.querySelector(".entry-back");
+let bBack = document.querySelector(".blog-back");
+
+fetch(`./languages/${currentLang}.json`).then(response => response.json()).then(data => {
+    newTranslations = data;
+
+    const path = window.location.pathname.split("/")[1];
+    
+    if (newTranslations[path]) {
+        document.title = `Pierog Detailing - ${newTranslations[path]}`;
+    }
+
+    for (const key in navigationButtons) {
+        if (navigationButtons[key]) {
+            navigationButtons[key].title = newTranslations[key];
+        }
+    }
+
+    if (npin) {
+        npin.title = newTranslations["npin"];
+    }
+
+    if (eBack) {
+        eBack.title = newTranslations["gBack"];
+    }
+
+    if (bBack) {
+        bBack.title = newTranslations["navHomeTitle"];
+    }
+});
+
+document.addEventListener("DOMContentLoaded", ()=>{
+    const icon = document.querySelector(".input-icon");
+    const input = document.querySelector("#time");
+
+    const visitDescribing = document.querySelector(".visit-describing");
+    const nMakeAppointment = document.querySelector("input.make-appointment");
+
+    if (icon) {
+        icon.addEventListener("click", ()=>{
+            input.showPicker?.();
+            input.focus();
+        })
+    }
+
+    fetch(`./languages/${currentLang}.json`).then(r => r.json()).then(data => {
+        if (visitDescribing && nMakeAppointment) {
+            visitDescribing.placeholder = data["vdp"]
+            nMakeAppointment.value = data["mav"]
+        }
+    })
+})
+
+fetch(`./languages/${currentLang}.json`).then(r => r.json()).then(data => {
+    let back = document.querySelector(".osback");
+    let back2 = document.querySelector(".back-to-main2-2");
+
+    if (back) {
+        back.title = data["lBack"];
+        back2.title = data["navHomeTitle"];
+    }
+})
+
+let empty = document.querySelector(".empty");
+let latestNothing = document.querySelector(".latest-nothing");
+
+if (blogFiles.length === 0) {
+    if (empty) {
+        empty.style.display = "flex";
+    }
+
+    if (latestNothing) {
+        latestNothing.style.display = "block";
+    }
+} else {
+    if (empty) {
+        empty.style.display = "none";
+    }
+
+    if (latestNothing) {
+        latestNothing.style.display = "none";
+    }
+}
+
+
+    async function MakePrices(which) {
+    const response = await fetch("/translations/seldescs.json");
+    const translations = await response.json();
+
+    const priceResponse = await fetch("/services-price-list.json");
+    const prices = await priceResponse.json();
+
+    const wrappers = {
+        "twoWheeler": document.querySelector(".wrapper.wapwhe"),
+        "atv": document.querySelector(".wrapper.wapatv"),
+        "smallCars": document.querySelector(".wrapper.wapmso"),
+        "biggerCars": document.querySelector(".wrapper.wapdso"),
+        "trailer": document.querySelector(".wrapper.waptrl"),
+        "deliveryTruck": document.querySelector(".wrapper.wapsds"),
+        "suv": document.querySelector(".wrapper.wapsuv"),
+        "truck": document.querySelector(".wrapper.waptr")
+    };
+
+    const targets = wrappers;
+
+    for (const [key, wrapper] of Object.entries(wrappers)) {
+        if (!wrapper) continue;
+        const wrapperContent = wrapper.querySelector(".wrapper-content");
+        const leftContent = wrapper.querySelector(".wrapper-content-left");
+        const RightContent = wrapper.querySelector(".wrapper-content-right");
+        if (!leftContent) continue;
+        if (!RightContent) continue;
+
+        leftContent.innerHTML = "";
+        RightContent.innerHTML = "";
+
+        const descDiv = document.createElement("div");
+        descDiv.innerHTML = translations[currentLang][key].join(" ");
+        leftContent.appendChild(descDiv);
+
+        const priceData = prices[which]?.[key];
+        if (priceData) {
+            const priceDiv = document.createElement("div");
+
+            const priceHTML = Object.values(priceData).join(" ");
+            priceDiv.innerHTML = priceHTML;
+
+            RightContent.appendChild(priceDiv);
+        }
+    }
 }

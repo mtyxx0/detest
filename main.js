@@ -8,7 +8,7 @@ let languages = {
     "es": document.querySelector(".spanish")
 }
 
-const blogFiles = ["blog1.json", "blog2.json"];
+const blogFiles = [];
 
 let HCharacters = document.querySelector(".characters");
 let HCMessage = document.querySelector(".message-content");

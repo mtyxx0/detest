@@ -8,5 +8,49 @@
         "suv": "SUV'y",
         "deliveryTruck": "Samochody dostawcze",
         "truck": "Ciężarówki"
+    },
+
+    "en": {
+        "twoWheeler": "Single-track vehicles",
+        "atv": "ATV",
+        "smallCars": "Small passenger car",
+        "biggerCars": "Big passenger car",
+        "trailer": "Trailers",
+        "suv": "SUVs",
+        "deliveryTruck": "Commercial vehicles",
+        "truck": "Trucks"
+    },
+
+    "ru": {
+        "twoWheeler": "двухколёсник",
+        "atv": "внедорожники",
+        "smallCars": "малые авто",
+        "biggerCars": "большие авто",
+        "trailer": "прицепы",
+        "suv": "внедорожникиs",
+        "deliveryTruck": "грузовые фургоны",
+        "truck": "грузовики"
+    },
+
+    "es": {
+        "twoWheeler": "Vehículos de dos ruedas",
+        "atv": "ATV",
+        "smallCars": "Coches pequeños",
+        "biggerCars": "Coches grandes",
+        "trailer": "Remolques",
+        "suv": "SUVs",
+        "deliveryTruck": "Vehículos de reparto",
+        "truck": "Camiones"
+    },
+
+    "uk": {
+        "twoWheeler": "Одноколісні транспортні засоби",
+        "atv": "ATV",
+        "smallCars": "Малі легкові автомобілі",
+        "biggerCars": "Великі легкові автомобілі",
+        "trailer": "Причепи",
+        "suv": "SUV",
+        "deliveryTruck": "Доставні автомобілі",
+        "truck": "Вантажівки"
     }
 }

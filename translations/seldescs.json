@@ -61,5 +61,261 @@
             "<div>Średnia ciężarówka (7,5-12 t)</div>",
             "<div>Ciężka ciężarówka (>12 t)</div>"
         ]
+    },
+
+    "en": {
+        "twoWheeler": [
+            "<div>Bike</div>",
+            "<div>Motorcycle</div>",
+            "<div>Unicycle</div>",
+            "<div>Scooter (classic and electric)</div>"
+        ],
+
+        "atv": [
+            "<div>Quad</div>",
+            "<div>UTV</div>"
+        ],
+
+        "smallCars": [
+            "<div>Microcar</div>",
+            "<div>Compact car</div>",
+            "<div>Hatchback</div>",
+            "<div>Coupe</div>"
+        ],
+
+        "biggerCars": [
+            "<div>Sedan</div>",
+            "<div>Cabrio</div>",
+            "<div>Liftback</div>",
+            "<div>Station wagon</div>",
+            "<div>Crossover</div>",
+            "<div>Minivan</div>",
+            "<div>Roadster</div>",
+            "<div>Limousine</div>",
+            "<div>Pickup</div>",
+            "<div>Targa</div>"
+        ],
+
+        "trailer": [
+            "<div>Box trailer</div>",
+            "<div>Tipper trailer</div>",
+            "<div>Tank trailer</div>",
+            "<div>Refrigerated trailer</div>",
+            "<div>Car transporter trailer</div>",
+            "<div>Flatbed trailer</div>",
+            "<div>Livestock trailer</div>"
+        ],
+
+        "suv": [
+            "<div>B-SUV</div>",
+            "<div>C-SUV</div>",
+            "<div>D-SUV</div>",
+            "<div>E-SUV</div>"
+        ],
+
+        "deliveryTruck": [
+            "<div>Cargo van</div>",
+            "<div>Van</div>",
+            "<div>Box truck</div>",
+            "<div>Tautliner truck</div>"
+        ],
+
+        "truck": [
+            "<div>Light truck (3,5–7,5 t)</div>",
+            "<div>Medium truck (7,5-12 t)</div>",
+            "<div>Heavy truck (>12 t)</div>"
+        ]
+    },
+
+    "ru": {
+        "twoWheeler": [
+            "<div>велосипед</div>",
+            "<div>мотоцикл</div>",
+            "<div>моноцикл</div>",
+            "<div>самокат (и электросамокат)</div>"
+        ],
+
+        "atv": [
+            "<div>квадроцикл</div>",
+            "<div>утв</div>"
+        ],
+
+        "smallCars": [
+            "<div>микрокар</div>",
+            "<div>компакт</div>",
+            "<div>хэтчбек</div>",
+            "<div>купе</div>"
+        ],
+
+        "biggerCars": [
+            "<div>седан</div>",
+            "<div>кабриолет</div>",
+            "<div>лифтбек</div>",
+            "<div>универсал</div>",
+            "<div>кроссовер</div>",
+            "<div>минивэн</div>",
+            "<div>родстер</div>",
+            "<div>лимузин</div>",
+            "<div>пикап</div>",
+            "<div>тарга</div>"
+        ],
+
+        "trailer": [
+            "<div>тентовый прицеп</div>",
+            "<div>самосвальный прицеп</div>",
+            "<div>цистерна</div>",
+            "<div>рефрижераторный прицеп</div>",
+            "<div>автовоз</div>",
+            "<div>платформенный прицеп</div>",
+            "<div>прицеп для перевозки скота</div>"
+        ],
+
+        "suv": [
+            "<div>B-SUV</div>",
+            "<div>C-SUV</div>",
+            "<div>D-SUV</div>",
+            "<div>E-SUV</div>"
+        ],
+
+        "deliveryTruck": [
+            "<div>фургон для грузов</div>",
+            "<div>фургон</div>",
+            "<div>грузовик с кузовом-фургоном</div>",
+            "<div>шторный грузовик</div>"
+        ],
+
+        "truck": [
+            "<div>лёгкий грузовик (3,5–7,5 t)</div>",
+            "<div>средний грузовик (7,5-12 t)</div>",
+            "<div>тяжёлый грузовик (>12 t)</div>"
+        ]
+    },
+
+    "es": {
+        "twoWheeler": [
+            "<div>Bicicleta</div>",
+            "<div>Motocicleta</div>",
+            "<div>Monociclo</div>",
+            "<div>Patinete (manual y eléctrico)</div>"
+        ],
+    
+        "atv": [
+            "<div>Quad</div>",
+            "<div>UTV</div>"
+        ],
+    
+        "smallCars": [
+            "<div>Microcoche</div>",
+            "<div>Compacto</div>",
+            "<div>Hatchback</div>",
+            "<div>Coupé</div>"
+        ],
+    
+        "biggerCars": [
+            "<div>Sedán</div>",
+            "<div>Convertible</div>",
+            "<div>Liftback</div>",
+            "<div>Familiar</div>",
+            "<div>Crossover</div>",
+            "<div>Monovolumen</div>",
+            "<div>Roadster</div>",
+            "<div>Limusina</div>",
+            "<div>Pickup</div>",
+            "<div>Targa</div>"
+        ],
+    
+        "trailer": [
+            "<div>Remolque de caja</div>",
+            "<div>Volquete</div>",
+            "<div>Cisterna (hasta 500 L)</div>",
+            "<div>Camión frigorífico</div>",
+            "<div>Grúa/Plataforma</div>",
+            "<div>Plataforma</div>",
+            "<div>Remolque para transporte de animales</div>"
+        ],
+    
+        "suv": [
+            "<div>B-SUV</div>",
+            "<div>C-SUV</div>",
+            "<div>D-SUV</div>",
+            "<div>E-SUV</div>"
+        ],
+    
+        "deliveryTruck": [
+            "<div>Furgoneta</div>",
+            "<div>Van</div>",
+            "<div>Camión con contenedor</div>",
+            "<div>Camión con lona</div>"
+        ],
+    
+        "truck": [
+            "<div>Camión ligero (3,5–7,5 t)</div>",
+            "<div>Camión mediano (7,5–12 t)</div>",
+            "<div>Camión pesado (>12 t)</div>"
+        ]
+    },
+
+    "uk": {
+        "twoWheeler": [
+            "<div>Велосипед</div>",
+            "<div>Мотоцикл</div>",
+            "<div>Моноцикл</div>",
+            "<div>Самокат (звичайний та електричний)</div>"
+        ],
+    
+        "atv": [
+            "<div>Квадроцикл</div>",
+            "<div>UTV</div>"
+        ],
+    
+        "smallCars": [
+            "<div>Мікроавтомобіль</div>",
+            "<div>Компакт</div>",
+            "<div>Хетчбек</div>",
+            "<div>Купе</div>"
+        ],
+    
+        "biggerCars": [
+            "<div>Седан</div>",
+            "<div>Кабріолет</div>",
+            "<div>Ліфтбек</div>",
+            "<div>Універсал</div>",
+            "<div>Кросовер</div>",
+            "<div>Мінівен</div>",
+            "<div>Родстер</div>",
+            "<div>Лімузин</div>",
+            "<div>Пікап</div>",
+            "<div>Тарга</div>"
+        ],
+    
+        "trailer": [
+            "<div>Причіп-скриня</div>",
+            "<div>Самоскид</div>",
+            "<div>Цистерна (до 500 л)</div>",
+            "<div>Рефрижератор</div>",
+            "<div>Евакуатор</div>",
+            "<div>Платформа</div>",
+            "<div>Причіп для перевезення тварин</div>"
+        ],
+    
+        "suv": [
+            "<div>B-SUV</div>",
+            "<div>C-SUV</div>",
+            "<div>D-SUV</div>",
+            "<div>E-SUV</div>"
+        ],
+    
+        "deliveryTruck": [
+            "<div>Фургон</div>",
+            "<div>Ван</div>",
+            "<div>Авто з контейнером</div>",
+            "<div>Авто з тентом</div>"
+        ],
+    
+        "truck": [
+            "<div>Легка вантажівка (3,5–7,5 т)</div>",
+            "<div>Середня вантажівка (7,5–12 т)</div>",
+            "<div>Важка вантажівка (>12 т)</div>"
+        ]
     }
 }

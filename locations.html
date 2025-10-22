@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detailing - salony</title>
+    <title>Pierog Detailing - Lokalizacja salonów</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v7.0.0/css/pro.min.css">
+    <link rel="shortcut icon" href="icon.jpg" type="image/x-icon">
 </head>
 <body>
     <div class="loading">
         <div class="loading-container">
             <div class="loading-fill">
                 <div class="loading-title">
-                    <span class="title-text wait">Czekaj</span>
-                    <span class="title-text done">Gotowe!</span>
+                    <span class="title-text wait" data-i18n="pb1"></span>
+                    <span class="title-text done" data-i18n="pb2"></span>
                 </div>
             </div>
         </div>
@@ -23,12 +24,11 @@
     <div id="right"></div>
 
     <div class="main-page">
-
-        <button class="locations-back">Wróć</button>
+        <button class="locations-back"><span data-i18n="lBack"></span></button>
 
         <div class="left">
-            <div class="title">PIEROG DETAILING</div>
-            <div class="subtitle">Lokalizacje salonów</div>
+            <div class="title locations-section">PIEROG DETAILING</div>
+            <div class="subtitle locations-section" data-i18n="lTitle"></div>
 
             <div class="locations-wrapper">
                 <div class="location frst">

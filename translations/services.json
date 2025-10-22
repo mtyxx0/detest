@@ -100,7 +100,11 @@
         "brakeSystemRepairs": "Ремонт тормозной системы",
         "steeringSystemRepairs": "Ремонт рулевого управления",
         "airConditioningService": "Обслуживание кондиционера",
-        "carAudioSystemsMontageAndService": "Установка и обслуживание аудиосистем автомобиля"
+        "carAudioSystemsMontageAndService": "Установка и обслуживание аудиосистем автомобиля",
+        "impregnation": "Пропитка",
+        "ppfWrapping": "Оклейка плёнкой PPF",
+        "polishing": "Полировка",
+        "windowTining": "Тонировка стёкол"
     },
 
     "uk": {

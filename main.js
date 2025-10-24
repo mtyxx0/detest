@@ -1838,9 +1838,3 @@ if (blogFiles.length === 0) {
         }
     }
 }
-
-if (window.innerHeight <= 768) {
-    window.addEventListener('resize', setFullHeight);
-    window.addEventListener('orientationchange', setFullHeight);
-    setFullHeight();
-}

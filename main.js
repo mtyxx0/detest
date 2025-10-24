@@ -162,15 +162,19 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     Object.values(Services).forEach(el => observer.observe(el));
 
-    for (const key in Services) {
+        for (const key in Services) {
         Services[key].querySelector(".service-read-more").addEventListener("click", () => {
             if (typeof ServiceDetails === "function") {
-                ServiceDetails(
-                    servicesData[currentLang][key],
-                    linksData[key],
-                    descsData[currentLang][key],
-                    key
-                );
+                if (linksData[key] !== "") {
+                    ServiceDetails(
+                        servicesData[currentLang][key],
+                        linksData[key],
+                        descsData[currentLang][key],
+                        key
+                    );
+                } else {
+                    ServiceDetails(servicesData[currentLang][key], 0, descsData[currentLang][key], key)
+                }
             }
         });
     }
@@ -192,11 +196,19 @@ function ServiceDetails(name, link, description, fclass) {
     const old = document.querySelector(".instagram-media");
     if (old) old.remove();
 
-    const insta = document.createElement("blockquote");
-    insta.className = 'instagram-media';
-    insta.setAttribute('data-instgrm-permalink', link);
-    insta.setAttribute('data-instgrm-version', '14');
-    document.querySelector('.service-preview').appendChild(insta);
+    if (link !== 0) {
+        const insta = document.createElement("blockquote");
+        insta.className = 'instagram-media';
+        insta.setAttribute('data-instgrm-permalink', link);
+        insta.setAttribute('data-instgrm-version', '14');
+        document.querySelector('.service-preview').appendChild(insta);
+    } else {
+        let insta = document.querySelector("blockquote");
+
+        if (insta) {
+            insta.remove();
+        }
+    }
 
     if (window.instgrm) {
         window.instgrm.Embeds.process();
@@ -1825,4 +1837,10 @@ if (blogFiles.length === 0) {
             RightContent.appendChild(priceDiv);
         }
     }
+}
+
+if (window.innerHeight <= 768) {
+    window.addEventListener('resize', setFullHeight);
+    window.addEventListener('orientationchange', setFullHeight);
+    setFullHeight();
 }

@@ -4051,10 +4051,4 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     .latest-title, .all-title {
         font-size: 22px;
     }
-
-    .main-page, .services-page, .about-page, .contact-page, .blog-page {
-        width: 100vw !important;
-        height: calc(var(--vh) * 100) !important;
-        position: relative;
-    }
 }

@@ -110,12 +110,12 @@ document.addEventListener("DOMContentLoaded", async () => {
     const allServicesList = document.querySelector(".all-services-list");
 
     const [servicesData, imagesData, prDscData, descsData, linksData, translationsData] = await Promise.all([
-        fetch('translations/services.json').then(r => r.json()),
-        fetch('img.json').then(r => r.json()),
-        fetch('translations/s_pr_dsc.json').then(r => r.json()),
-        fetch('translations/descriptions.json').then(r => r.json()),
-        fetch('links.json').then(r => r.json()),
-        fetch(`languages/${currentLang}.json`).then(r => r.json())
+        fetch('/translations/services.json').then(r => r.json()),
+        fetch('/img.json').then(r => r.json()),
+        fetch('/translations/s_pr_dsc.json').then(r => r.json()),
+        fetch('/translations/descriptions.json').then(r => r.json()),
+        fetch('/links.json').then(r => r.json()),
+        fetch(`/languages/${currentLang}.json`).then(r => r.json())
     ]);
 
     const Services = {};

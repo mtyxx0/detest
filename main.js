@@ -8,7 +8,7 @@ let languages = {
     "es": document.querySelector(".spanish")
 }
 
-const blogFiles = [];
+const blogFiles = ["blog1.json", "blog2.json"];
 
 let HCharacters = document.querySelector(".characters");
 let HCMessage = document.querySelector(".message-content");
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const [servicesData, imagesData, prDscData, descsData, linksData, translationsData] = await Promise.all([
         fetch('./translations/services.json').then(r => r.json()),
-        fetch('img.json').then(r => r.json()),
+        fetch('./img.json').then(r => r.json()),
         fetch('./translations/s_pr_dsc.json').then(r => r.json()),
         fetch('./translations/descriptions.json').then(r => r.json()),
         fetch('./links.json').then(r => r.json()),
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         div.innerHTML = `
             <div class="service-title">${servicesData[currentLang][key]}</div>
-            <div class="service-thumbnail" data-src="img/${imagesData[key]}"></div>
+            <div class="service-thumbnail" data-src="/img/${imagesData[key]}"></div>
             <div class="service-description">${prDscData[currentLang][key]}</div>
             <button class="service-read-more ${key}">${translationsData["service-new-read"]}</button>
         `;
@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     Object.values(Services).forEach(el => observer.observe(el));
 
-        for (const key in Services) {
+    for (const key in Services) {
         Services[key].querySelector(".service-read-more").addEventListener("click", () => {
             if (typeof ServiceDetails === "function") {
                 if (linksData[key] !== "") {
@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                         key
                     );
                 } else {
-                    ServiceDetails(servicesData[currentLang][key], 0, descsData[currentLang][key], key)
+                    ServiceDetails2(servicesData[currentLang][key], descsData[currentLang][key], key)
                 }
             }
         });
@@ -197,18 +197,44 @@ function ServiceDetails(name, link, description, fclass) {
     if (old) old.remove();
 
     if (link !== 0) {
+        let preview = document.querySelector(".no-preview");
+        preview.style.display = "none";
         const insta = document.createElement("blockquote");
         insta.className = 'instagram-media';
         insta.setAttribute('data-instgrm-permalink', link);
         insta.setAttribute('data-instgrm-version', '14');
         document.querySelector('.service-preview').appendChild(insta);
-    } else {
-        let insta = document.querySelector("blockquote");
-
-        if (insta) {
-            insta.remove();
-        }
     }
+
+    if (window.instgrm) {
+        window.instgrm.Embeds.process();
+    }
+
+    requestAnimationFrame(()=>{
+        SD.style.display = "flex";
+        requestAnimationFrame(()=>{
+            SD.style.opacity = '1';
+            SD.style.transform = "translate(-50%, -50%) scale(1)";
+        })
+    })
+}
+
+function ServiceDetails2(name, description, fclass) {
+    let serviceName = document.querySelector(".service-name");
+    let replace = document.querySelector('.html-replace');
+    
+    serviceName.textContent = name;
+
+    toSave = fclass;
+    localStorage.setItem("toSave", fclass);
+
+    replace.innerHTML = description;
+    
+    const old = document.querySelector(".instagram-media");
+    if (old) old.remove();
+
+    let preview = document.querySelector(".no-preview");
+    preview.style.display = "block";
 
     if (window.instgrm) {
         window.instgrm.Embeds.process();
@@ -304,7 +330,7 @@ if (ContactUs) {
 }
 
 async function setLanguage(lang) {
-    const translations = await fetch(`languages/${lang}.json`).then(res => res.json());
+    const translations = await fetch(`/languages/${lang}.json`).then(res => res.json());
 
     document.querySelectorAll('[data-i18n]').forEach(el => {
         if (el.dataset.i18n !== 'mainTitle') {
@@ -611,7 +637,7 @@ function CreatePriceList(fclass, name, thumbnail, LOR) {
     let rightSide = document.querySelector(".right-side");
 
     const html = `<div class="pexm ${fclass} fh">
-                    <div class="pexm-thumbnail" style="background-image: url(img/${thumbnail});"></div>
+                    <div class="pexm-thumbnail" style="background-image: url(/img/${thumbnail});"></div>
                     <div class="pexm-footer">
                         <div class="pexm-name">${name}</div>
                     </div>
@@ -808,7 +834,7 @@ function ShowInfo(infoContent, ats) {
                 info.style.opacity = "1";
             }, 0);
     
-            window.addEventListener("keydown", (event)=>{
+            const handleSpace = (event) => {
                 if (event.code === "Space") {
                     event.preventDefault();
     
@@ -818,9 +844,13 @@ function ShowInfo(infoContent, ats) {
                         functionCalled = false;
                         visitContainer.style.overflowX = "hidden";
                         visitContainer.style.overflowY = "auto";
+
+                        window.removeEventListener("keydown", handleSpace)
                     }, 1000);
                 }
-            })
+            };
+
+            window.addEventListener("keydown", handleSpace);
             
             iContent.textContent = infoContent;
         } else {
@@ -1837,4 +1867,15 @@ if (blogFiles.length === 0) {
             RightContent.appendChild(priceDiv);
         }
     }
+}
+
+function setFullHeight() {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+if (window.innerHeight <= 768) {
+    window.addEventListener('resize', setFullHeight);
+    window.addEventListener('orientationchange', setFullHeight);
+    setFullHeight();
 }

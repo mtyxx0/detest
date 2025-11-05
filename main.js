@@ -1551,7 +1551,7 @@ async function getTop3NewestBlogs() {
     const blogs = [];
 
     for (const file of blogFiles) {
-        const res = await fetch(`/blogs/${file}`);
+        const res = await fetch(`blogs/${file}`);
         if (!res.ok) continue;
 
         const data = await res.json();

@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         div.innerHTML = `
             <div class="service-title">${servicesData[currentLang][key]}</div>
-            <div class="service-thumbnail" data-src="/img/${imagesData[key]}"></div>
+            <div class="service-thumbnail" data-src="img/${imagesData[key]}"></div>
             <div class="service-description">${prDscData[currentLang][key]}</div>
             <button class="service-read-more ${key}">${translationsData["service-new-read"]}</button>
         `;
@@ -637,7 +637,7 @@ function CreatePriceList(fclass, name, thumbnail, LOR) {
     let rightSide = document.querySelector(".right-side");
 
     const html = `<div class="pexm ${fclass} fh">
-                    <div class="pexm-thumbnail" style="background-image: url(/img/${thumbnail});"></div>
+                    <div class="pexm-thumbnail" style="background-image: url(img/${thumbnail});"></div>
                     <div class="pexm-footer">
                         <div class="pexm-name">${name}</div>
                     </div>
